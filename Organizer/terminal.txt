@@ -1,0 +1,256 @@
+/Workspace/Languages/Phyton/AI Assist Projects
+❯ /bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/undo.py"
+Restored 4K cillian-murphy @desktop_wallpaperr.png
+Restored chicago_skyline_skyscrapers_cityscape_night_city_lights_4000x5000.jpg
+Restored meu desenho.jpeg
+Restored .aider.chat.history.md
+Restored Paint_Shop_Retail.xlsx
+Restored Paint_Hardware_Inventory_Template.xlsx
+Restored Paint_Shop_Retail (1).xlsx
+Restored Paint Shop Retail - Fixed.xlsx
+Restored Paint Business .xlsx
+Restored Bat_Repair_Business.xlsx
+Restored Bat_Repair_Business (1).xlsx
+Restored Document.pdf
+Restored Intern.kanchan.docx
+Restored MOHIT JANGID.pdf
+Restored builders-protocol.md
+Restored 072efbbe67619e115cbbe5e24289ad7e45ec7004b645361f38bc2c42149f2ae8_encrypt_signedFinal.pdf
+Restored Gulshan Jangid – Resume.pdf
+Restored XPPenLinux4.0.15-260422.tar.gz
+Restored super.mp4
+Restored yazi-x86_64-unknown-linux-gnu.deb
+Restored google-chrome-stable_current_x86_64.rpm
+Restored .aider.input.history
+Restored .gitignore
+Restored capbudg.xls
+Restored BusinessValuation.xls
+Restored MX-25.2_July_x64.iso
+Restored MX-25.2_July_x64.iso.sha512
+Restored com.lostf1sh.pixelplayeross_3.apk
+
+~/Workspace/Languages/Phyton/AI Assist Projects
+❯ python folderorganizer.py 
+[DRY RUN]: /home/gulshan/Downloads/4K cillian-murphy @desktop_wallpaperr.png -> Images
+[DRY RUN]: /home/gulshan/Downloads/chicago_skyline_skyscrapers_cityscape_night_city_lights_4000x5000.jpg -> Images
+[DRY RUN]: /home/gulshan/Downloads/meu desenho.jpeg -> Images
+[DRY RUN]: /home/gulshan/Downloads/.aider.chat.history.md -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Paint_Shop_Retail.xlsx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Paint_Hardware_Inventory_Template.xlsx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Paint_Shop_Retail (1).xlsx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Paint Shop Retail - Fixed.xlsx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Paint Business .xlsx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Bat_Repair_Business.xlsx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Bat_Repair_Business (1).xlsx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Document.pdf -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Intern.kanchan.docx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/MOHIT JANGID.pdf -> Documents
+[DRY RUN]: /home/gulshan/Downloads/builders-protocol.md -> Documents
+[DRY RUN]: /home/gulshan/Downloads/072efbbe67619e115cbbe5e24289ad7e45ec7004b645361f38bc2c42149f2ae8_encrypt_signedFinal.pdf -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Gulshan Jangid – Resume.pdf -> Documents
+[DRY RUN]: /home/gulshan/Downloads/XPPenLinux4.0.15-260422.tar.gz -> Archives
+[DRY RUN]: /home/gulshan/Downloads/super.mp4 -> Video
+[DRY RUN]: /home/gulshan/Downloads/yazi-x86_64-unknown-linux-gnu.deb -> Installers
+[DRY RUN]: /home/gulshan/Downloads/google-chrome-stable_current_x86_64.rpm -> Installers
+[DRY RUN]: /home/gulshan/Downloads/.aider.input.history -> Other
+[DRY RUN]: /home/gulshan/Downloads/.gitignore -> Other
+[DRY RUN]: /home/gulshan/Downloads/capbudg.xls -> Other
+[DRY RUN]: /home/gulshan/Downloads/BusinessValuation.xls -> Other
+[DRY RUN]: /home/gulshan/Downloads/MX-25.2_July_x64.iso -> Other
+[DRY RUN]: /home/gulshan/Downloads/MX-25.2_July_x64.iso.sha512 -> Other
+[DRY RUN]: /home/gulshan/Downloads/com.lostf1sh.pixelplayeross_3.apk -> Other
+
+~/Workspace/Languages/Phyton/AI Assist Projects
+❯ python folderorganizer.py ls
+[DRY RUN]: /home/gulshan/Downloads/4K cillian-murphy @desktop_wallpaperr.png -> Images
+[DRY RUN]: /home/gulshan/Downloads/chicago_skyline_skyscrapers_cityscape_night_city_lights_4000x5000.jpg -> Images
+[DRY RUN]: /home/gulshan/Downloads/meu desenho.jpeg -> Images
+[DRY RUN]: /home/gulshan/Downloads/.aider.chat.history.md -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Paint_Shop_Retail.xlsx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Paint_Hardware_Inventory_Template.xlsx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Paint_Shop_Retail (1).xlsx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Paint Shop Retail - Fixed.xlsx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Paint Business .xlsx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Bat_Repair_Business.xlsx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Bat_Repair_Business (1).xlsx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Document.pdf -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Intern.kanchan.docx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/MOHIT JANGID.pdf -> Documents
+[DRY RUN]: /home/gulshan/Downloads/builders-protocol.md -> Documents
+[DRY RUN]: /home/gulshan/Downloads/072efbbe67619e115cbbe5e24289ad7e45ec7004b645361f38bc2c42149f2ae8_encrypt_signedFinal.pdf -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Gulshan Jangid – Resume.pdf -> Documents
+[DRY RUN]: /home/gulshan/Downloads/XPPenLinux4.0.15-260422.tar.gz -> Archives
+[DRY RUN]: /home/gulshan/Downloads/super.mp4 -> Video
+[DRY RUN]: /home/gulshan/Downloads/yazi-x86_64-unknown-linux-gnu.deb -> Installers
+[DRY RUN]: /home/gulshan/Downloads/google-chrome-stable_current_x86_64.rpm -> Installers
+[DRY RUN]: /home/gulshan/Downloads/.aider.input.history -> Other
+[DRY RUN]: /home/gulshan/Downloads/.gitignore -> Other
+[DRY RUN]: /home/gulshan/Downloads/capbudg.xls -> Other
+[DRY RUN]: /home/gulshan/Downloads/BusinessValuation.xls -> Other
+[DRY RUN]: /home/gulshan/Downloads/MX-25.2_July_x64.iso -> Other
+[DRY RUN]: /home/gulshan/Downloads/MX-25.2_July_x64.iso.sha512 -> Other
+[DRY RUN]: /home/gulshan/Downloads/com.lostf1sh.pixelplayeross_3.apk -> Other
+
+~/Workspace/Languages/Phyton/AI Assist Projects
+❯ python folderorganizer.py --run ls
+Moved 4K cillian-murphy @desktop_wallpaperr.png -> Images/
+Moved chicago_skyline_skyscrapers_cityscape_night_city_lights_4000x5000.jpg -> Images/
+Moved meu desenho.jpeg -> Images/
+Moved .aider.chat.history.md -> Documents/
+Moved Paint_Shop_Retail.xlsx -> Documents/
+Moved Paint_Hardware_Inventory_Template.xlsx -> Documents/
+Moved Paint_Shop_Retail (1).xlsx -> Documents/
+Moved Paint Shop Retail - Fixed.xlsx -> Documents/
+Moved Paint Business .xlsx -> Documents/
+Moved Bat_Repair_Business.xlsx -> Documents/
+Moved Bat_Repair_Business (1).xlsx -> Documents/
+Moved Document.pdf -> Documents/
+Moved Intern.kanchan.docx -> Documents/
+Moved MOHIT JANGID.pdf -> Documents/
+Moved builders-protocol.md -> Documents/
+Moved 072efbbe67619e115cbbe5e24289ad7e45ec7004b645361f38bc2c42149f2ae8_encrypt_signedFinal.pdf -> Documents/
+Moved Gulshan Jangid – Resume.pdf -> Documents/
+Moved XPPenLinux4.0.15-260422.tar.gz -> Archives/
+Moved super.mp4 -> Video/
+Moved yazi-x86_64-unknown-linux-gnu.deb -> Installers/
+Moved google-chrome-stable_current_x86_64.rpm -> Installers/
+Moved .aider.input.history -> Other/
+Moved .gitignore -> Other/
+Moved capbudg.xls -> Other/
+Moved BusinessValuation.xls -> Other/
+Moved MX-25.2_July_x64.iso -> Other/
+Moved MX-25.2_July_x64.iso.sha512 -> Other/
+Moved com.lostf1sh.pixelplayeross_3.apk -> Other/
+
+
+
+Workspace/Languages/Phyton/AI Assist Projects
+❯ python folderorganizer.py
+[DRY RUN]: /home/gulshan/Downloads/4K cillian-murphy @desktop_wallpaperr.png -> Images
+[DRY RUN]: /home/gulshan/Downloads/chicago_skyline_skyscrapers_cityscape_night_city_lights_4000x5000.jpg -> Images
+[DRY RUN]: /home/gulshan/Downloads/meu desenho.jpeg -> Images
+[Skipped]-> /home/gulshan/Downloads/.aider.chat.history.md/
+[DRY RUN]: /home/gulshan/Downloads/Paint_Shop_Retail.xlsx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Paint_Hardware_Inventory_Template.xlsx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Paint_Shop_Retail (1).xlsx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Paint Shop Retail - Fixed.xlsx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Paint Business .xlsx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Bat_Repair_Business.xlsx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Bat_Repair_Business (1).xlsx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Document.pdf -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Intern.kanchan.docx -> Documents
+[DRY RUN]: /home/gulshan/Downloads/MOHIT JANGID.pdf -> Documents
+[DRY RUN]: /home/gulshan/Downloads/builders-protocol.md -> Documents
+[DRY RUN]: /home/gulshan/Downloads/072efbbe67619e115cbbe5e24289ad7e45ec7004b645361f38bc2c42149f2ae8_encrypt_signedFinal.pdf -> Documents
+[DRY RUN]: /home/gulshan/Downloads/Gulshan Jangid – Resume.pdf -> Documents
+[DRY RUN]: /home/gulshan/Downloads/XPPenLinux4.0.15-260422.tar.gz -> Archives
+[DRY RUN]: /home/gulshan/Downloads/super.mp4 -> Video
+[DRY RUN]: /home/gulshan/Downloads/yazi-x86_64-unknown-linux-gnu.deb -> Installers
+[DRY RUN]: /home/gulshan/Downloads/google-chrome-stable_current_x86_64.rpm -> Installers
+[Skipped]-> /home/gulshan/Downloads/.aider.input.history/
+[Skipped]-> /home/gulshan/Downloads/.gitignore/
+[DRY RUN]: /home/gulshan/Downloads/capbudg.xls -> Other
+[DRY RUN]: /home/gulshan/Downloads/BusinessValuation.xls -> Other
+[DRY RUN]: /home/gulshan/Downloads/MX-25.2_July_x64.iso -> Other
+[DRY RUN]: /home/gulshan/Downloads/MX-25.2_July_x64.iso.sha512 -> Other
+[DRY RUN]: /home/gulshan/Downloads/com.lostf1sh.pixelplayeross_3.apk -> Other
+
+~/Workspace/Languages/Phyton/AI Assist Projects
+❯ python folderorganizer.py --run
+Moved 4K cillian-murphy @desktop_wallpaperr.png -> Images/
+Moved chicago_skyline_skyscrapers_cityscape_night_city_lights_4000x5000.jpg -> Images/
+Moved meu desenho.jpeg -> Images/
+[Skipped]-> /home/gulshan/Downloads/.aider.chat.history.md/
+Moved Paint_Shop_Retail.xlsx -> Documents/
+Moved Paint_Hardware_Inventory_Template.xlsx -> Documents/
+Moved Paint_Shop_Retail (1).xlsx -> Documents/
+Moved Paint Shop Retail - Fixed.xlsx -> Documents/
+Moved Paint Business .xlsx -> Documents/
+Moved Bat_Repair_Business.xlsx -> Documents/
+Moved Bat_Repair_Business (1).xlsx -> Documents/
+Moved Document.pdf -> Documents/
+Moved Intern.kanchan.docx -> Documents/
+Moved MOHIT JANGID.pdf -> Documents/
+Moved builders-protocol.md -> Documents/
+Moved 072efbbe67619e115cbbe5e24289ad7e45ec7004b645361f38bc2c42149f2ae8_encrypt_signedFinal.pdf -> Documents/
+Moved Gulshan Jangid – Resume.pdf -> Documents/
+Moved XPPenLinux4.0.15-260422.tar.gz -> Archives/
+Moved super.mp4 -> Video/
+Moved yazi-x86_64-unknown-linux-gnu.deb -> Installers/
+Moved google-chrome-stable_current_x86_64.rpm -> Installers/
+[Skipped]-> /home/gulshan/Downloads/.aider.input.history/
+[Skipped]-> /home/gulshan/Downloads/.gitignore/
+Moved capbudg.xls -> Other/
+Moved BusinessValuation.xls -> Other/
+Moved MX-25.2_July_x64.iso -> Other/
+Moved MX-25.2_July_x64.iso.sha512 -> Other/
+Moved com.lostf1sh.pixelplayeross_3.apk -> Other/
+
+~/Workspace/Languages/Phyton/AI Assist Projects
+❯ python folderorganizer.py --run
+[Skipped]-> /home/gulshan/Downloads/.aider.chat.history.md/
+[Skipped]-> /home/gulshan/Downloads/.aider.input.history/
+[Skipped]-> /home/gulshan/Downloads/.gitignore/
+
+~/Workspace/Languages/Phyton/AI Assist Projects
+❯ python folderorganizer.py --run
+[Skipped]-> /home/gulshan/Downloads/.aider.chat.history.md/
+[Skipped]-> /home/gulshan/Downloads/.aider.input.history/
+[Skipped]-> /home/gulshan/Downloads/.gitignore/
+[Skipped] File Already Exists meu desenho.jpeg-> Images/
+
+~/Workspace/Languages/Phyton/AI Assist Projects
+❯ python -m pyflakes folderorganizer.py
+/usr/bin/python: No module named pyflakes
+
+~/Workspace/Languages/Phyton/AI Assist Projects
+❯ python pip pyflakes
+python: can't open file '/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/pip': [Errno 2] No such file or directory
+
+~/Workspace/Languages/Phyton/AI Assist Projects
+❯ pip install pyflakes
+Defaulting to user installation because normal site-packages is not writeable
+Collecting pyflakes
+  Downloading pyflakes-4.0.2-py2.py3-none-any.whl.metadata (3.7 kB)
+Downloading pyflakes-4.0.2-py2.py3-none-any.whl (66 kB)
+Installing collected packages: pyflakes
+Successfully installed pyflakes-4.0.2
+
+~/Workspace/Languages/Phyton/AI Assist Projects
+❯ python -m pyflakes folderorganizer.py
+
+~/Workspace/Languages/Phyton/AI Assist Projects
+❯ python folderorganizer.py
+[Skipped]-> /home/gulshan/Downloads/.aider.chat.history.md
+[Skipped]-> /home/gulshan/Downloads/.aider.input.history
+[Skipped]-> /home/gulshan/Downloads/.gitignore
+[DRY RUN]: /home/gulshan/Downloads/meu desenho.jpeg -> Images
+[Skipped]-> File Already Exists meu desenho.jpeg-> Images/
+
+~/Workspace/Languages/Phyton/AI Assist Projects
+❯ /bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/undo.py"
+Restored 4K cillian-murphy @desktop_wallpaperr.png
+Restored chicago_skyline_skyscrapers_cityscape_night_city_lights_4000x5000.jpg
+SKIPPED (name clash): /home/gulshan/Downloads/Images/meu desenho.jpeg
+Restored Paint_Shop_Retail.xlsx
+Restored Paint_Hardware_Inventory_Template.xlsx
+Restored Paint_Shop_Retail (1).xlsx
+Restored Paint Shop Retail - Fixed.xlsx
+Restored Paint Business .xlsx
+Restored Bat_Repair_Business.xlsx
+Restored Bat_Repair_Business (1).xlsx
+Restored Document.pdf
+Restored Intern.kanchan.docx
+Restored MOHIT JANGID.pdf
+Restored builders-protocol.md
+Restored 072efbbe67619e115cbbe5e24289ad7e45ec7004b645361f38bc2c42149f2ae8_encrypt_signedFinal.pdf
+Restored Gulshan Jangid – Resume.pdf
+Restored XPPenLinux4.0.15-260422.tar.gz
+Restored super.mp4
+Restored yazi-x86_64-unknown-linux-gnu.deb
+Restored google-chrome-stable_current_x86_64.rpm
+Restored capbudg.xls
+Restored BusinessValuation.xls
+Restored MX-25.2_July_x64.iso
+Restored MX-25.2_July_x64.iso.sha512
+Restored com.lostf1sh.pixelplayeross_3.apk

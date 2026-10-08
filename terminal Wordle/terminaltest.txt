@@ -1,0 +1,96 @@
+ /bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/terminal Wordle/wordle.py"
+Guess 1/6: gusha
+ G  U  S  H  A 
+Guess 2/6: lagha
+ L  A  G  H  A 
+Guess 3/6: lauhg
+ L  A  U  H  G 
+Guess 4/6: laugh
+ L  A  U  G  H 
+Got it in 4.
+
+~/Workspace/Languages/Phyton/AI Assist Projects
+❯ python -m pyplakes wordle.py
+/usr/bin/python: No module named pyplakes
+
+~/Workspace/Languages/Phyton/AI Assist Projects
+❯ python -m pyflakes wordle.py
+wordle.py: No such file or directory
+
+~/Workspace/Languages/Phyton/AI Assist Projects
+❯ cd terminal Wordle
+bash: cd: too many arguments
+
+~/Workspace/Languages/Phyton/AI Assist Projects
+❯ cd terminal_Wordle
+bash: cd: terminal_Wordle: No such file or directory
+
+~/Workspace/Languages/Phyton/AI Assist Projects
+❯ cd terminal\Wordle
+bash: cd: terminalWordle: No such file or directory
+
+~/Workspace/Languages/Phyton/AI Assist Projects
+❯ cd terminal\ Wordle
+
+~/Workspace/Languages/Phyton/AI Assist Projects/terminal Wordle
+❯ cd "terminal Wordle"
+bash: cd: terminal Wordle: No such file or directory
+
+~/Workspace/Languages/Phyton/AI Assist Projects/terminal Wordle
+❯ python -m pyflakes wordle.py
+
+~/Workspace/Languages/Phyton/AI Assist Projects/terminal Wordle
+❯ python wordle.py
+Guess 1/6: ^Z
+[2]+  Stopped                    python wordle.py
+
+~/Workspace/Languages/Phyton/AI Assist Projects/terminal Wordle
+❯ /bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/terminal Wordle/wordle.py"
+Guess 1/6: alpha
+ A  L  P  H  A 
+Guess 2/6: aide
+Five letters, a-z only.
+Guess 2/6: aidee
+ A  I  D  E  E 
+Guess 3/6: simle
+ S  I  M  L  E 
+Guess 4/6: mille
+ M  I  L  L  E 
+Guess 5/6: mouse
+ M  O  U  S  E 
+Got it in 5.
+
+~/Workspace/Languages/Phyton/AI Assist Projects/terminal Wordle
+❯ python -m pyflakes wordle.py
+
+~/Workspace/Languages/Phyton/AI Assist Projects/terminal Wordle
+❯ python -m pyflakes wordle.py
+wordle.py:75:11: undefined name 'undefined_thing'
+
+~/Workspace/Languages/Phyton/AI Assist Projects/terminal Wordle
+/bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/terminal Wordle/test.py"
+<zip object at 0x7fcd61163d00>
+0
+1
+2
+3
+4
+5
+
+~/Workspace/Languages/Phyton/AI Assist Projects/terminal Wordle
+❯ /bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/terminal Wordle/test.py"
+crane
+a
+slate
+b
+pilot
+c
+0
+1
+2
+3
+4
+5
+
+~/Workspace/Languages/Phyton/AI Assist Projects/terminal Wordle
+❯ 
