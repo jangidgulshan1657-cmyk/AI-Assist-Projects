@@ -1,0 +1,99 @@
+bash: fastfetch: command not found
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ /bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/sysinfo.py"
+=== SYSTEM INFO ===
+Uptime : 0d 0h 20m
+CPU    : AMD Ryzen 5 4600G with Radeon Graphics (12 threads)
+Load   : 0.25 (1m)  0.32 (5m)  0.25 (15m)
+RAM    : [#####---------------] 27.2%  4.2 / 15.4 GB
+Disks  :
+  /            [--------------------]  0.0%  0 / 8 GB
+  /home        [###########---------] 56.9%  134 / 236 GB
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ /bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/sysinfo.py"
+=== SYSTEM INFO ===
+Traceback (most recent call last):
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/sysinfo.py", line 109, in <module>
+    main()
+    ~~~~^^
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/sysinfo.py", line 89, in main
+    print(f"Distro: {read_distro()}")
+                     ~~~~~~~~~~~^^
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/sysinfo.py", line 43, in read_distro
+    return line.split(":",1)[1].strip("\"")
+           ~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ /bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/sysinfo.py"
+=== SYSTEM INFO ===
+Traceback (most recent call last):
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/sysinfo.py", line 109, in <module>
+    main()
+    ~~~~^^
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/sysinfo.py", line 89, in main
+    print(f"Distro: {read_distro()}")
+                     ~~~~~~~~~~~^^
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/sysinfo.py", line 43, in read_distro
+    return line.split(":",1).strip("\"")
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'strip'
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ /bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/sysinfo.py"
+=== SYSTEM INFO ===
+Distro: ['PRETTY_NAME="Freedesktop SDK 25.08 (Flatpak runtime)"\n']
+Uptime : 0d 0h 27m
+CPU    : AMD Ryzen 5 4600G with Radeon Graphics (12 threads)
+Load   : 0.20 (1m)  0.22 (5m)  0.23 (15m)
+RAM    : [######--------------] 30.2%  4.7 / 15.4 GB
+Disks  :
+  /            [--------------------]  0.0%  0 / 8 GB
+  /home        [###########---------] 56.9%  134 / 236 GB
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ /bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/sysinfo.py"
+=== SYSTEM INFO ===
+Distro: PRETTY_NAME="Freedesktop SDK 25.08 (Flatpak runtime)"
+
+Uptime : 0d 0h 28m
+CPU    : AMD Ryzen 5 4600G with Radeon Graphics (12 threads)
+Load   : 0.39 (1m)  0.28 (5m)  0.25 (15m)
+RAM    : [######--------------] 30.3%  4.7 / 15.4 GB
+Disks  :
+  /            [--------------------]  0.0%  0 / 8 GB
+  /home        [###########---------] 56.9%  134 / 236 GB
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ /bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/sysinfo.py"
+=== SYSTEM INFO ===
+Traceback (most recent call last):
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/sysinfo.py", line 109, in <module>
+    main()
+    ~~~~^^
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/sysinfo.py", line 89, in main
+    print(f"Distro: {read_distro()}")
+                     ~~~~~~~~~~~^^
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/sysinfo.py", line 43, in read_distro
+    return line.split(":",1)[0].split(":",1).strip("'\"")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'strip'
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ /bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/sysinfo.py"
+=== SYSTEM INFO ===
+Distro: Freedesktop SDK 25.08 (Flatpak runtime)
+Uptime : 0d 0h 39m
+CPU    : AMD Ryzen 5 4600G with Radeon Graphics (12 threads)
+Load   : 0.23 (1m)  0.39 (5m)  0.35 (15m)
+RAM    : [######--------------] 33.4%  5.1 / 15.4 GB
+Disks  :
+  /            [--------------------]  0.0%  0 / 8 GB
+  /home        [###########---------] 56.9%  134 / 236 GB
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ ^C
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ 
