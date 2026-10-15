@@ -97,3 +97,213 @@ Disks  :
 
 ~/Workspace/Languages/Phyton/AI Assist Projects main* 
 ❯ 
+
+
+
+
+bash: fastfetch: command not found
+~/Workspace/Languages/Phyton/AI Assist Projects main* ⇡
+❯ /bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/diskhog.py"
+Scanning /home/gulshan ... this can take a minute.
+
+=== BIGGEST ITEMS IN /home/gulshan (total 67.1 GB) ===
+  [######--------------] 31.7%    21.3 GB  .local
+  [######--------------] 30.2%    20.3 GB  Videos
+  [##------------------] 13.6%     9.1 GB  Pictures
+  [#-------------------]  9.4%     6.3 GB  .cache
+  [--------------------]  4.4%     3.0 GB  Downloads
+  [--------------------]  4.1%     2.7 GB  .config
+  [--------------------]  2.0%     1.4 GB  .vscode
+  [--------------------]  1.2%   835.5 MB  Music
+  [--------------------]  1.0%   671.0 MB  Workspace
+  [--------------------]  1.0%   666.1 MB  .var
+  [--------------------]  0.9%   593.1 MB  .npm
+  [--------------------]  0.2%   160.1 MB  .cargo
+  [--------------------]  0.1%    62.7 MB  Documents
+  [--------------------]  0.1%    57.0 MB  Fedora-Hyprland
+  [--------------------]  0.1%    45.8 MB  .mydotfiles
+
+=== SINGLE FILES OVER 100.0 MB ===
+     7.9 GB  /home/gulshan/.local/share/Trash/files/Web Development/Harvard CS50_s Web Programming with Python and JavaScript – Full University Course(2K_HD).webm
+     2.7 GB  /home/gulshan/Downloads/Other/MX-25.2_July_x64.iso
+     1.9 GB  /home/gulshan/.local/share/Trash/files/Web Development/Learn Web Design For Beginners - Full Course(2K_HD).webm
+     1.9 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 3 - Algorithms(2K_HD).webm
+     1.8 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 8 - HTML_ CSS_ JavaScript(2K_HD).webm
+     1.6 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 1 - C(2K_HD).webm
+     1.5 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 9 - Flask(2K_HD).webm
+     1.5 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 0 - Scratch(2K_HD).webm
+     1.5 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 4 - Memory(2K_HD).webm
+     1.4 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 2 - Arrays(2K_HD).webm
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* ⇡
+❯ /bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/test.py"
+12
+12.3
+12.35
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* ⇡
+❯ /bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/test.py"
+12
+12.3
+12.35
+12.346
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* ⇡
+❯ /bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/test.py"
+12
+12.3
+12.35
+12.346
+|video.mp4   |   1.5 MB|
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* ⇡
+❯ cd Linux
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Linux main* ⇡
+❯ python pyflakes diskhog.py
+python: can't open file '/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/pyflakes': [Errno 2] No such file or directory
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Linux main* ⇡
+❯ pyflakes diskhog.py
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Linux main* ⇡
+❯ pyflakes diskhog.py
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Linux main* ⇡
+❯ /bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/diskhog.py"
+Scanning /home/gulshan ... this can take a minute.
+
+=== BIGGEST ITEMS IN /home/gulshan (total 67.2 GB) ===
+  [######--------------] 31.7%    21.3 GB  .local 106180 Total Files
+  [######--------------] 30.1%    20.3 GB  Videos 282 Total Files
+  [##------------------] 13.5%     9.1 GB  Pictures 4076 Total Files
+  [#-------------------]  9.5%     6.4 GB  .cache 185981 Total Files
+  [--------------------]  4.4%     3.0 GB  Downloads 70 Total Files
+  [--------------------]  4.1%     2.7 GB  .config 17804 Total Files
+  [--------------------]  2.0%     1.4 GB  .vscode 18435 Total Files
+  [--------------------]  1.2%   835.5 MB  Music 165 Total Files
+  [--------------------]  1.0%   671.0 MB  Workspace 13083 Total Files
+  [--------------------]  1.0%   666.3 MB  .var 15179 Total Files
+  [--------------------]  0.9%   593.1 MB  .npm 7586 Total Files
+  [--------------------]  0.2%   160.1 MB  .cargo 9322 Total Files
+  [--------------------]  0.1%    62.7 MB  Documents 325 Total Files
+  [--------------------]  0.1%    57.0 MB  Fedora-Hyprland 97 Total Files
+  [--------------------]  0.1%    45.8 MB  .mydotfiles 946 Total Files
+
+=== SINGLE FILES OVER 100.0 MB ===
+     7.9 GB  /home/gulshan/.local/share/Trash/files/Web Development/Harvard CS50_s Web Programming with Python and JavaScript – Full University Course(2K_HD).webm
+     2.7 GB  /home/gulshan/Downloads/Other/MX-25.2_July_x64.iso
+     1.9 GB  /home/gulshan/.local/share/Trash/files/Web Development/Learn Web Design For Beginners - Full Course(2K_HD).webm
+     1.9 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 3 - Algorithms(2K_HD).webm
+     1.8 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 8 - HTML_ CSS_ JavaScript(2K_HD).webm
+     1.6 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 1 - C(2K_HD).webm
+     1.5 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 9 - Flask(2K_HD).webm
+     1.5 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 0 - Scratch(2K_HD).webm
+     1.5 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 4 - Memory(2K_HD).webm
+     1.4 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 2 - Arrays(2K_HD).webm
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Linux main* ⇡
+❯ /bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/diskhog.py"
+Scanning /home/gulshan ... this can take a minute.
+
+=== BIGGEST ITEMS IN /home/gulshan (total 67.2 GB) ===
+  [######--------------] 31.7%    21.3 GB  .local 106180       Files
+  [######--------------] 30.1%    20.3 GB  Videos 282          Files
+  [##------------------] 13.5%     9.1 GB  Pictures 4076         Files
+  [#-------------------]  9.5%     6.4 GB  .cache 185981       Files
+  [--------------------]  4.4%     3.0 GB  Downloads 70           Files
+  [--------------------]  4.1%     2.7 GB  .config 17804        Files
+  [--------------------]  2.0%     1.4 GB  .vscode 18435        Files
+  [--------------------]  1.2%   835.5 MB  Music 165          Files
+  [--------------------]  1.0%   671.0 MB  Workspace 13083        Files
+  [--------------------]  1.0%   666.3 MB  .var 15181        Files
+  [--------------------]  0.9%   593.1 MB  .npm 7586         Files
+  [--------------------]  0.2%   160.1 MB  .cargo 9322         Files
+  [--------------------]  0.1%    62.7 MB  Documents 325          Files
+  [--------------------]  0.1%    57.0 MB  Fedora-Hyprland 97           Files
+  [--------------------]  0.1%    45.8 MB  .mydotfiles 946          Files
+
+=== SINGLE FILES OVER 100.0 MB ===
+     7.9 GB  /home/gulshan/.local/share/Trash/files/Web Development/Harvard CS50_s Web Programming with Python and JavaScript – Full University Course(2K_HD).webm
+     2.7 GB  /home/gulshan/Downloads/Other/MX-25.2_July_x64.iso
+     1.9 GB  /home/gulshan/.local/share/Trash/files/Web Development/Learn Web Design For Beginners - Full Course(2K_HD).webm
+     1.9 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 3 - Algorithms(2K_HD).webm
+     1.8 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 8 - HTML_ CSS_ JavaScript(2K_HD).webm
+     1.6 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 1 - C(2K_HD).webm
+     1.5 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 9 - Flask(2K_HD).webm
+     1.5 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 0 - Scratch(2K_HD).webm
+     1.5 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 4 - Memory(2K_HD).webm
+     1.4 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 2 - Arrays(2K_HD).webm
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Linux main* ⇡
+❯ /bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/diskhog.py"
+Scanning /home/gulshan ... this can take a minute.
+
+=== BIGGEST ITEMS IN /home/gulshan (total 67.2 GB) ===
+  [######--------------] 31.7%    21.3 GB  .local          106180 Files
+  [######--------------] 30.1%    20.3 GB  Videos             282 Files
+  [##------------------] 13.5%     9.1 GB  Pictures          4076 Files
+  [#-------------------]  9.5%     6.4 GB  .cache          185981 Files
+  [--------------------]  4.4%     3.0 GB  Downloads           70 Files
+  [--------------------]  4.1%     2.7 GB  .config          17804 Files
+  [--------------------]  2.0%     1.4 GB  .vscode          18435 Files
+  [--------------------]  1.2%   835.5 MB  Music              165 Files
+  [--------------------]  1.0%   671.0 MB  Workspace        13083 Files
+  [--------------------]  1.0%   666.3 MB  .var             15184 Files
+  [--------------------]  0.9%   593.1 MB  .npm              7586 Files
+  [--------------------]  0.2%   160.1 MB  .cargo            9322 Files
+  [--------------------]  0.1%    62.7 MB  Documents          325 Files
+  [--------------------]  0.1%    57.0 MB  Fedora-Hyprland           97 Files
+  [--------------------]  0.1%    45.8 MB  .mydotfiles          946 Files
+
+=== SINGLE FILES OVER 100.0 MB ===
+     7.9 GB  /home/gulshan/.local/share/Trash/files/Web Development/Harvard CS50_s Web Programming with Python and JavaScript – Full University Course(2K_HD).webm
+     2.7 GB  /home/gulshan/Downloads/Other/MX-25.2_July_x64.iso
+     1.9 GB  /home/gulshan/.local/share/Trash/files/Web Development/Learn Web Design For Beginners - Full Course(2K_HD).webm
+     1.9 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 3 - Algorithms(2K_HD).webm
+     1.8 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 8 - HTML_ CSS_ JavaScript(2K_HD).webm
+     1.6 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 1 - C(2K_HD).webm
+     1.5 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 9 - Flask(2K_HD).webm
+     1.5 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 0 - Scratch(2K_HD).webm
+     1.5 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 4 - Memory(2K_HD).webm
+     1.4 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 2 - Arrays(2K_HD).webm
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Linux main* ⇡
+❯ 
+
+
+
+/bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/diskhog.py"
+Scanning /home/gulshan ... this can take a minute.
+
+=== BIGGEST ITEMS IN /home/gulshan (total 48.1 GB) ===
+  [########------------] 42.1%    20.3 GB  Videos                   282 Files
+  [###-----------------] 18.9%     9.1 GB  Pictures                4076 Files
+  [##------------------] 13.2%     6.4 GB  .cache                185790 Files
+  [#-------------------]  6.2%     3.0 GB  Downloads                 70 Files
+  [#-------------------]  5.7%     2.7 GB  .config                17794 Files
+  [--------------------]  4.5%     2.2 GB  .local                 50177 Files
+  [--------------------]  2.8%     1.4 GB  .vscode                18435 Files
+  [--------------------]  1.7%   835.5 MB  Music                    165 Files
+  [--------------------]  1.4%   671.0 MB  Workspace              13043 Files
+  [--------------------]  1.4%   666.3 MB  .var                   15186 Files
+  [--------------------]  1.2%   593.1 MB  .npm                    7573 Files
+  [--------------------]  0.3%   160.1 MB  .cargo                  9322 Files
+  [--------------------]  0.1%    62.7 MB  Documents                326 Files
+  [--------------------]  0.1%    57.0 MB  Fedora-Hyprland           97 Files
+  [--------------------]  0.1%    45.8 MB  .mydotfiles              944 Files
+
+=== SINGLE FILES OVER 100.0 MB ===
+     2.7 GB  /home/gulshan/Downloads/Other/MX-25.2_July_x64.iso
+     1.9 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 3 - Algorithms(2K_HD).webm
+     1.8 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 8 - HTML_ CSS_ JavaScript(2K_HD).webm
+     1.6 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 1 - C(2K_HD).webm
+     1.5 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 9 - Flask(2K_HD).webm
+     1.5 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 0 - Scratch(2K_HD).webm
+     1.5 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 4 - Memory(2K_HD).webm
+     1.4 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 2 - Arrays(2K_HD).webm
+     1.4 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 5 - Data Structures(2K_HD).webm
+     1.3 GB  /home/gulshan/Videos/Study/CS50/CS50x 2026 - Lecture 6 - Python(2K_HD).webm
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Linux main* ⇡
+❯ 
