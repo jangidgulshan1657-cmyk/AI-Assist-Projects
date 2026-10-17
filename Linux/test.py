@@ -1,3 +1,6 @@
+from pathlib import Path
+from datetime import datetime
+
 x = 12.3456
 
 # Formated string with type float!! 
@@ -23,3 +26,11 @@ num = 4.2
 # Right-aligned, total box width of 9, rounded to 1 decimal place:
 print(f"[{num:>9.1f}]")
 # Output: [      4.2]  (6 spaces + 3 characters for "4.2" = 9 total)
+
+item = Path.home() / "Downloads/Gulshan Resume.png"
+
+info = item.stat()
+print(f"Size: {info.st_size} bytes")
+print(f"Last modified: {info.st_mtime}")
+print(f"Permissions: {oct(info.st_mode)}")
+print(datetime.fromtimestamp(1791857375.3410938))
