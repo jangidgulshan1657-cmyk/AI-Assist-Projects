@@ -5,13 +5,22 @@ import shutil
 from pathlib import Path
 
 CATEGORIES = {
-    "Images": {".jpg", ".jpeg", ".png", ".gif", ".svg", ".webp"},
-    "Documents": {".pdf", ".docx", ".txt", ".md", ".xlsx", ".pptx"},
-    "Archives": {".zip", ".tar", ".gz", ".rar", ".7z"},
-    "Audio": {".mp3", ".wav", ".flac"},
-    "Video": {".mp4", ".mkv", ".mov"},
-    "Installers": {".appimage", ".deb", ".rpm"},
+    "Pictures": [".jpg", ".jpeg", ".png", ".webp", ".gif", ".svg"],
+    "Documents": [".pdf", ".docx", ".txt", ".xlsx", ".pptx", ".odt"],
+    "Videos": [".mp4", ".mkv", ".webm", ".mov"],
+    "Music": [".mp3", ".flac", ".wav", ".ogg"],
+    "Archives": [".zip", ".tar", ".gz", ".xz", ".7z", ".rar"],
+    "Disk Images": [".iso", ".img"],
+    "Code": [".py", ".js", ".json", ".html", ".css", ".sh"],
+    "Installers": [".rpm", ".deb", ".appimage"],
+    "Fonts": [".ttf", ".otf", ".woff", ".woff2", ".eot"],
+    "E-Books": [".epub", ".mobi", ".azw", ".azw3", ".djvu", ".cbr", ".cbz"],
+    "Torrents": [".torrent"],
+    "Data": [".csv", ".tsv", ".parquet", ".sql", ".sqlite", ".db", ".feather"],
+    "Design": [".psd", ".ai", ".eps", ".xcf", ".sketch", ".fig", ".kra"],
+    "ROMs": [".nes", ".sfc", ".smc", ".gba", ".gbc", ".nds", ".n64", ".z64"]
 }
+
 
 def categorize(file: Path) -> str:
  

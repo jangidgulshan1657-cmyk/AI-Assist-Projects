@@ -1,0 +1,118 @@
+~/Workspace/Languages/Phyton/AI Assist Projects main* ⇡
+❯ /bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/Watcher.py"
+Watching /home/gulshan/Downloads  [DRY-RUN, nothing will be moved]  Ctrl+C to stop.
+^C
+----Stopped----
+Would Moved 0 Would Skipped 0
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* ⇡
+❯ /bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/Watcher.py"
+Watching /home/gulshan/Downloads  [DRY-RUN, nothing will be moved]  Ctrl+C to stop.
+09:06:49  WOULD MOVE  pngtree-linkedin-pink-gradient-logo-of-social-media-icon-design-png-image_2359952.webp  ->  Pictures/
+09:08:37  WOULD MOVE  videoplayback.mp4  ->  Videos/
+^C
+----Stopped----
+Would Moved 0 Would Skipped 0
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* ⇡
+❯ cd linux
+bash: cd: linux: No such file or directory
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* ⇡
+❯ cd Linux
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Linux main* ⇡
+❯ python Watcher.py --run
+Watching /home/gulshan/Downloads  [LIVE, new files will be moved]  Ctrl+C to stop.
+^C
+----Stopped----
+Traceback (most recent call last):
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/Watcher.py", line 168, in main
+    time.sleep(CHECK_EVERY)
+    ~~~~~~~~~~^^^^^^^^^^^^^
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/Watcher.py", line 175, in <module>
+    main()
+    ~~~~^^
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/Watcher.py", line 173, in main
+    print(f"{prefix}Moved {Moved} {prefix}Would Skipped {Skipped}")
+                           ^^^^^
+NameError: name 'Moved' is not defined
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Linux main* ⇡
+❯ pyflakes Watcher.py
+Watcher.py:140:21: undefined name 'Skipped'
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Linux main* ⇡
+❯ pyflakes Watcher.py
+Watcher.py:143:21: undefined name 'Skipped'
+Watcher.py:143:21: local variable 'Skipped' is assigned to but never used
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Linux main* ⇡
+❯ pyflakes Watcher.py
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Linux main* ⇡
+❯ python Watcher.py --run
+/home/gulshan/~/Downloads is not a folder.
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Linux main* ⇡
+❯ python Watcher.py --run
+Watching /home/gulshan/Downloads  [LIVE, new files will be moved]  Ctrl+C to stop.
+^C
+----Stopped----
+Moved 0 Would Skipped 0
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Linux main* ⇡
+❯ python Watcher.py --run --every
+Error: --every requires a numeric value (e.g., --every 5)
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Linux main* ⇡
+❯ python Watcher.py --run --every fr
+Error: --every requires a numeric value (e.g., --every 5)
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Linux main* ⇡
+❯ python Watcher.py --run --every 5
+Error: --every requires a numeric value (e.g., --every 5)
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Linux main* ⇡
+❯ python Watcher.py --run --every 5
+Watching /home/gulshan/Downloads  [LIVE, new files will be moved]  Ctrl+C to stop.
+Traceback (most recent call last):
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/Watcher.py", line 181, in <module>
+    main()
+    ~~~~^^
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Linux/Watcher.py", line 174, in main
+    time.sleep(CHECK_EVERY)
+               ^^^^^^^^^^^
+NameError: name 'CHECK_EVERY' is not defined
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Linux main* ⇡
+❯ pyflakes Watcher.py
+Watcher.py:105:13: local variable 'check_every' is assigned to but never used
+Watcher.py:174:24: undefined name 'CHECK_EVERY'
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Linux main* ⇡
+❯ python Watcher.py --run --every 5
+Watching /home/gulshan/Downloads  [LIVE, new files will be moved]  Ctrl+C to stop.
+^C
+----Stopped----
+Moved 0 Would Skipped 0
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Linux main* ⇡
+❯ python Watcher.py --run --every
+Error: --every requires a numeric value (e.g., --every 5)
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Linux main* ⇡
+❯ python Watcher.py --run --every 5 /home/gulshan/music
+/home/gulshan/music is not a folder.
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Linux main* ⇡
+❯ python Watcher.py --run --every 5 /home/gulshan/Music
+Watching /home/gulshan/Music  [LIVE, new files will be moved]  Ctrl+C to stop.
+^C
+----Stopped----
+Moved 0 Would Skipped 0

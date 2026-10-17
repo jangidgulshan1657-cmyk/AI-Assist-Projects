@@ -20,7 +20,6 @@ import sys
 import time
 from pathlib import Path
 
-CHECK_EVERY = 2  # seconds between looks at the folder
 
 # Browsers write to names like these while a download is still running.
 UNFINISHED = [".crdownload", ".part", ".tmp", ".download", ".opdownload"]
@@ -35,6 +34,12 @@ CATEGORIES = {
     "Disk Images": [".iso", ".img"],
     "Code": [".py", ".js", ".json", ".html", ".css", ".sh"],
     "Installers": [".rpm", ".deb", ".appimage"],
+    "Fonts": [".ttf", ".otf", ".woff", ".woff2", ".eot"],
+    "E-Books": [".epub", ".mobi", ".azw", ".azw3", ".djvu", ".cbr", ".cbz"],
+    "Torrents": [".torrent"],
+    "Data": [".csv", ".tsv", ".parquet", ".sql", ".sqlite", ".db", ".feather"],
+    "Design": [".psd", ".ai", ".eps", ".xcf", ".sketch", ".fig", ".kra"],
+    "ROMs": [".nes", ".sfc", ".smc", ".gba", ".gbc", ".nds", ".n64", ".z64"]
 }
 
 
@@ -67,32 +72,47 @@ def handle(item, folder, dry_run):
 
     if target.exists():
         print(f"{stamp()}  SKIP   {item.name}  (already a file with that name in {target_dir.name}/)")
-        return
+        return "skipped"
 
     if dry_run:
         print(f"{stamp()}  WOULD MOVE  {item.name}  ->  {target_dir.name}/")
-        return
+        return "moved"
 
     try:
         target_dir.mkdir(exist_ok=True)
         shutil.move(str(item), str(target))
     except OSError as error:
         print(f"{stamp()}  ERROR  {item.name}: {error}")
-        return
+        return "error"
     print(f"{stamp()}  MOVED  {item.name}  ->  {target_dir.name}/")
+    return "moved"
 
 
 def main():
     args = sys.argv[1:]
 
+    # 1. Handle --run flag
     dry_run = True
     if "--run" in args:
         dry_run = False
         args.remove("--run")
 
-    folder = Path.home() / "Downloads"
-    if len(args) > 0:
-        folder = Path(args[0]).expanduser()
+    # 2. Handle --every <seconds>
+    check_every = 2  # default value
+    if "--every" in args:
+        idx = args.index("--every")
+        try:
+            check_every = int(args[idx + 1])
+            # Remove both '--every' and its number so they aren't confused for a folder path
+            del args[idx:idx + 2]
+        except (IndexError, ValueError):
+            print("Error: --every requires a numeric value (e.g., --every 5)")
+            return
+
+    
+    folder_1 = args[0] if len(args) > 0 else "Downloads"
+
+    folder = Path.home() / folder_1
 
     if not folder.is_dir():
         print(f"{folder} is not a folder.")
@@ -104,12 +124,19 @@ def main():
     # Files that are already here when we start are not "new". Ignore them.
     for item in folder.iterdir():
         done.add(item.name)
+    
+    print(f"Dry run: {dry_run}")
+    print(f"Check interval: {check_every}s")
+    print(f"Target folder: {folder}")
 
     if dry_run:
         mode = "DRY-RUN, nothing will be moved"
     else:
         mode = "LIVE, new files will be moved"
-    print(f"Watching {folder}  [{mode}]  Ctrl+C to stop.")
+    print(f"\nWatching {folder}  [{mode}]  Ctrl+C to stop.")
+
+    skipped_count = 0
+    moved_count = 0
 
     try:
         while True:
@@ -117,10 +144,12 @@ def main():
 
             for item in folder.iterdir():
                 present.add(item.name)
-
-                if item.name in done or should_skip(item):
+                if item.name in done:
                     continue
-
+                if should_skip(item):
+                    skipped_count += 1
+                    done.add(item.name)
+                    continue
                 try:
                     size = item.stat().st_size
                 except OSError:
@@ -128,7 +157,11 @@ def main():
 
                 # Same size as last look = nothing is writing to it any more.
                 if last_sizes.get(item.name) == size:
-                    handle(item, folder, dry_run)
+                    status = handle(item, folder, dry_run)
+                    if status == "moved":
+                        moved_count += 1
+                    elif status == "skipped":
+                        skipped_count +=1
                     done.add(item.name)
                 else:
                     last_sizes[item.name] = size
@@ -142,10 +175,11 @@ def main():
                 if name not in present:
                     del last_sizes[name]
 
-            time.sleep(CHECK_EVERY)
+            time.sleep(check_every)
 
     except KeyboardInterrupt:
-        print("\nStopped.")
-
+        prefix = "Would have " if dry_run else ""
+        print("\n----Stopped----")
+        print(f"{prefix}Moved {moved_count} {prefix}Would Skipped {skipped_count}")
 
 main()
