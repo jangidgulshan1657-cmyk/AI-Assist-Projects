@@ -234,3 +234,66 @@ Moved 0  Skipped 1
 
 ~/Workspace/Languages/Phyton/AI Assist Projects main* 
 ❯ 
+
+
+
+/Workspace/Languages/Phyton/AI Assist Projects/Watcher main* 
+❯ python main.py
+python: can't open file '/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Watcher/main.py': [Errno 2] No such file or directory
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Watcher main* 
+❯ cd src
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Watcher/src main* 
+❯ python main.py
+Size:    3.0 GB Name: Downloads                 83 Files
+Dry run: True
+Check interval: 2s
+Target folder: /home/gulshan/Downloads
+
+Watching /home/gulshan/Downloads  [DRY-RUN, nothing will be moved]  Ctrl+C to stop.
+^C
+----Stopped----
+Would have Moved 0 Would have  Skipped 0
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Watcher/src main* 
+❯ python main.py
+Size:   3.0 GB Name: Downloads      83 Files
+Dry run: True
+Check interval: 2s
+Target folder: /home/gulshan/Downloads
+
+Watching /home/gulshan/Downloads  [DRY-RUN, nothing will be moved]  Ctrl+C to stop.
+^C
+----Stopped----
+Would have Moved 0 Would have  Skipped 0
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Watcher/src main* 
+❯ python main.py
+Folder: Downloads 
+Size:   3.0 GB  
+     83 Files
+Dry run: True
+Check interval: 2s
+Target folder: /home/gulshan/Downloads
+
+Watching /home/gulshan/Downloads  [DRY-RUN, nothing will be moved]  Ctrl+C to stop.
+^Z
+[1]+  Stopped                    python main.py
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Watcher/src main* 
+❯ python main.py
+Folder: Downloads 
+Size:   3.0 GB  
+Files:      83
+Dry run: True
+Check interval: 2s
+Target folder: /home/gulshan/Downloads
+
+Watching /home/gulshan/Downloads  [DRY-RUN, nothing will be moved]  Ctrl+C to stop.
+^C
+----Stopped----
+Would have Moved 0 Would have  Skipped 0
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Watcher/src main* 
+❯ 

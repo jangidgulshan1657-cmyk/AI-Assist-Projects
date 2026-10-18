@@ -16,13 +16,13 @@ import os
 import sys
 
 # These look like folders but are not real files on disk. Skip them.
-SKIP = ["/proc", "/sys", "/dev", "/run"]
+SKIP: list[str] = ["/proc", "/sys", "/dev", "/run"]
 
 # Any single file at least this big gets remembered for the "big files" list.
-BIG_FILE = 100 * 1024 * 1024  # 100 MB
+BIG_FILE: int = 100 * 1024 * 1024  # 100 MB
 
 
-def human(n_bytes):
+def human(n_bytes: int | float) -> str:
     # Turns 1572864 into "1.5 MB"
     size = float(n_bytes)
     for unit in ["B", "KB", "MB", "GB"]:
@@ -32,16 +32,16 @@ def human(n_bytes):
     return f"{size:.1f} TB"
 
 
-def bar(percent, width=20):
+def bar(percent: float, width: int = 20) -> str:
     # Same helper as in sysinfo.py (we copy it for now).
     filled = int(percent / 100 * width)
     return "#" * filled + "-" * (width - filled)
 
 
-def folder_size(top, big_files):
+def folder_size(top: str, big_files: list[tuple[int, str]]) -> tuple[int, int]:
     # os.walk visits `top` and every folder inside it, however deep.
     # Each step gives us: the folder's path, its subfolders, its files.
-    total = 0
+    total_size = 0
     total_files = 0
 
     for folder, subfolders, files in os.walk(top):
@@ -54,14 +54,14 @@ def folder_size(top, big_files):
             except OSError:
                 continue  # file vanished or we are not allowed to look
             total_files += 1
-            total += size
+            total_size += size
             if size >= BIG_FILE:
                 big_files.append((size, full))
 
-    return total,total_files
+    return total_size,total_files
 
 
-def main():
+def main() -> None:
     root = os.path.expanduser("~")  # "~" becomes /home/yourname
     if len(sys.argv) > 1:
         root = sys.argv[1]
@@ -72,8 +72,8 @@ def main():
 
     print(f"Scanning {root} ... this can take a minute.")
 
-    results = []     # one (size, name,total_files) pair per item directly inside root
-    big_files = []   # (size, path) for every file over BIG_FILE
+    results: list[tuple[int, str, int]] = []     # one (size, name,total_files) pair per item directly inside root
+    big_files: list[tuple[int, str]] = []   # (size, path) for every file over BIG_FILE
     grand_total = 0
 
     for name in os.listdir(root):
@@ -114,5 +114,3 @@ def main():
         print("  none")
     for size, path in big_files[:10]:
         print(f"  {human(size):>9}  {path}")
-
-main()

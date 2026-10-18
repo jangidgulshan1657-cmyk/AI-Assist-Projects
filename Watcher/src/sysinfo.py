@@ -14,7 +14,7 @@ import shutil
 import sys
 
 
-def read_uptime():
+def read_uptime() -> str:
     # /proc/uptime looks like: "12345.67 98765.43"
     # The first number is seconds since boot.
     with open("/proc/uptime") as f:
@@ -27,7 +27,7 @@ def read_uptime():
     return f"{days}d {hours}h {minutes}m"
 
 
-def read_cpu_model():
+def read_cpu_model() -> str:
     # /proc/cpuinfo has many lines like "model name : Intel(R) ..."
     # We only want the first line that starts with "model name".
     with open("/proc/cpuinfo") as f:
@@ -36,14 +36,14 @@ def read_cpu_model():
                 return line.split(":", 1)[1].strip()
     return "unknown"
 
-def read_distro():
+def read_distro() -> str:
     with open("/etc/os-release") as f:
         for line in f:
             if line.startswith("PRETTY_NAME="):
                 return line.split("=",1)[1].strip().strip("'\"")
     return "unknown"
 
-def read_load():
+def read_load() -> tuple[str, str, str]:
     # /proc/loadavg looks like: "0.52 0.48 0.40 1/523 8841"
     # First three numbers: average load over 1, 5, 15 minutes.
     with open("/proc/loadavg") as f:
@@ -51,10 +51,10 @@ def read_load():
     return parts[0], parts[1], parts[2]
 
 
-def read_memory():
+def read_memory() -> tuple[int, int]:
     # /proc/meminfo has lines like "MemTotal:   16318420 kB"
     # We store every line in a dictionary, then pick what we need.
-    info = {}
+    info: dict[str, int] = {}
     with open("/proc/meminfo") as f:
         for line in f:
             name, rest = line.split(":")
@@ -66,13 +66,13 @@ def read_memory():
     return total, used
 
 
-def bar(percent, width=20):
+def bar(percent: float, width: int = 20) -> str:
     # Turns 60 into "############--------"
     filled = int(percent / 100 * width)
     return "#" * filled + "-" * (width - filled)
 
 
-def show_disk(path):
+def show_disk(path: str) -> None:
     # shutil.disk_usage asks the OS about the disk that holds `path`.
     if not os.path.exists(path):
         print(f"  {path:<12} (does not exist)")
@@ -84,7 +84,7 @@ def show_disk(path):
     print(f"  {path:<12} [{bar(percent)}] {percent:4.1f}%  {used_gb:.0f} / {total_gb:.0f} GB")
 
 
-def main():
+def main() -> None:
     print("=== SYSTEM INFO ===")
     print(f"Distro: {read_distro()}")
     print(f"Uptime : {read_uptime()}")
@@ -100,7 +100,7 @@ def main():
     print(f"RAM    : [{bar(mem_percent)}] {mem_percent:4.1f}%  {used_gb:.1f} / {total_gb:.1f} GB")
 
     print("Disks  :")
-    paths = ["/"]
+    paths: list[str] = ["/"]
     paths = paths + sys.argv[1:]  # extra mount points from the command line
     for path in paths:
         show_disk(path)
