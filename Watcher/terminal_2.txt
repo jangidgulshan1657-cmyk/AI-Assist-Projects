@@ -116,3 +116,121 @@ Watching /home/gulshan/Music  [LIVE, new files will be moved]  Ctrl+C to stop.
 ^C
 ----Stopped----
 Moved 0 Would Skipped 0
+
+
+
+
+
+
+bash: fastfetch: command not found
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ tail -f ~/.local/share/pc-toolkit/watcher.log
+2026-10-18 07:53:39  WOULD MOVE  And suddenly_ there is a change. __Add _TaxiDriver to your collection(MP3) (Copy).mp3  ->  Music/
+2026-10-18 07:53:53  WOULD MOVE  4K cillian-murphy @desktop_wallpaperr (Copy).png  ->  Pictures/
+2026-10-18 07:55:41  WOULD MOVE  Document (Copy).pdf  ->  Documents/
+2026-10-18 07:56:07  WOULD MOVE  CD(MP3_320K).mp3  ->  Music/
+^C
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ tail -n 20 ~/.local/share/pc-toolkit/watcher.log
+2026-10-18 07:53:39  WOULD MOVE  And suddenly_ there is a change. __Add _TaxiDriver to your collection(MP3) (Copy).mp3  ->  Music/
+2026-10-18 07:53:53  WOULD MOVE  4K cillian-murphy @desktop_wallpaperr (Copy).png  ->  Pictures/
+2026-10-18 07:55:41  WOULD MOVE  Document (Copy).pdf  ->  Documents/
+2026-10-18 07:56:07  WOULD MOVE  CD(MP3_320K).mp3  ->  Music/
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+
+
+
+
+
+----Stopped----
+Would have Moved 2 Would have  Skipped 0
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Watcher main*
+❯ python Watcher.py
+Dry run: True
+Check interval: 2s
+Target folder: /home/gulshan/Downloads
+
+Watching /home/gulshan/Downloads  [DRY-RUN, nothing will be moved]  Ctrl+C to stop.
+2026-10-18 07:53:39  WOULD MOVE  And suddenly_ there is a change. __Add _TaxiDriver to your collection(MP3) (Copy).mp3  ->  Music/
+2026-10-18 07:53:53  WOULD MOVE  4K cillian-murphy @desktop_wallpaperr (Copy).png  ->  Pictures/
+2026-10-18 07:55:41  WOULD MOVE  Document (Copy).pdf  ->  Documents/
+2026-10-18 07:56:07  WOULD MOVE  CD(MP3_320K).mp3  ->  Music/
+^C
+----Stopped----
+Would have Moved 4 Would have  Skipped 0
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Watcher main*
+
+
+
+
+
+
+/bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Watcher/test.py"
+Size: 6264389 bytes
+Last modified: 1786931810.0
+Permissions: 0o100740
+2026-10-13 07:39:35.341094
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Watcher main* 
+❯ /bin/python3 "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Watcher/test.py"
+True
+Size: 6264389 bytes
+Last modified: 1786931810.0
+Permissions: 0o100740
+2026-10-13 07:39:35.341094
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Watcher main* 
+❯ python Watcher.py --run --every 3
+Dry run: False
+Check interval: 3s
+Target folder: /home/gulshan/Downloads
+
+Watching /home/gulshan/Downloads  [LIVE, new files will be moved]  Ctrl+C to stop.
+2026-10-18 08:47:40  MOVED  KODAK _ King _ _SeedheMaut _ MM _ Official Music Video(MP3_320K).mp3  ->  Music/
+libnotify-Message: 08:47:40.834: App Icon is not available when using Portal Notifications
+libnotify-Message: 08:47:40.834: Category is not available when using Portal Notifications
+libnotify-Message: 08:47:40.834: App Name is not available when using Portal Notifications
+2026-10-18 08:48:01  MOVED  Notes.md  ->  Other/
+libnotify-Message: 08:48:01.860: App Icon is not available when using Portal Notifications
+libnotify-Message: 08:48:01.860: Category is not available when using Portal Notifications
+libnotify-Message: 08:48:01.860: App Name is not available when using Portal Notifications
+^C
+----Stopped----
+Moved 2  Skipped 0
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Watcher main* 
+
+
+~/Workspace/Languages/Phyton/AI Assist Projects/Watcher main* 
+❯ python Watcher.py --run --every 3
+Dry run: False
+Check interval: 3s
+Target folder: /home/gulshan/Downloads
+
+Watching /home/gulshan/Downloads  [LIVE, new files will be moved]  Ctrl+C to stop.
+2026-10-18 08:53:10  SKIP   Notes.md  (already a file with that name in Other/)
+^C
+----Stopped----
+Moved 0  Skipped 1
+
+
+
+
+❯ tail -n 20 ~/.local/share/pc-toolkit/watcher.log
+2026-10-18 07:53:39  WOULD MOVE  And suddenly_ there is a change. __Add _TaxiDriver to your collection(MP3) (Copy).mp3  ->  Music/
+2026-10-18 07:53:53  WOULD MOVE  4K cillian-murphy @desktop_wallpaperr (Copy).png  ->  Pictures/
+2026-10-18 07:55:41  WOULD MOVE  Document (Copy).pdf  ->  Documents/
+2026-10-18 07:56:07  WOULD MOVE  CD(MP3_320K).mp3  ->  Music/
+2026-10-18 07:58:42  MOVED  El Matador(MP3_320K).mp3  ->  Music/
+2026-10-18 07:58:52  MOVED  start_day.py  ->  Code/
+2026-10-18 08:01:27  MOVED  linuxfun.pdf  ->  Documents/
+2026-10-18 08:47:40  MOVED  KODAK _ King _ _SeedheMaut _ MM _ Official Music Video(MP3_320K).mp3  ->  Music/
+2026-10-18 08:48:01  MOVED  Notes.md  ->  Other/
+2026-10-18 08:53:10  SKIP   Notes.md  (already a file with that name in Other/)
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ 

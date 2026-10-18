@@ -14,12 +14,16 @@ Usage:
 
 Stop it with Ctrl+C.
 """
-
+import subprocess
 import shutil
 import sys
 import time
 from pathlib import Path
 
+Log_dic = Path.home()/".local/share/pc-toolkit"
+Log_file = Log_dic/"watcher.log"
+
+HAS_NOTIFY = shutil.which("notify-send") is not None
 
 # Browsers write to names like these while a download is still running.
 UNFINISHED = [".crdownload", ".part", ".tmp", ".download", ".opdownload"]
@@ -42,6 +46,28 @@ CATEGORIES = {
     "ROMs": [".nes", ".sfc", ".smc", ".gba", ".gbc", ".nds", ".n64", ".z64"]
 }
 
+def log(message):
+    print(message)
+    try:
+        Log_dic.mkdir(parents=True,exist_ok= True)
+        with open(Log_file,'a',encoding="utf-8") as f:
+            f.write(message + "\n")
+            f.flush()
+    except OSError as err:
+        print(f"Error in opening the file-- {err}")
+
+
+def notify(title,message):
+    if not HAS_NOTIFY:
+        return
+    try:
+        subprocess.run(
+            ["notify-send",title,message],
+            check= False,
+            stderr=subprocess.DEVNULL
+            )
+    except OSError as e:
+        pass
 
 def category_for(item):
     # item.suffix is the file ending, e.g. "photo.PNG" -> ".PNG"
@@ -63,7 +89,7 @@ def should_skip(item):
 
 
 def stamp():
-    return time.strftime("%H:%M:%S")
+    return time.strftime("%Y-%m-%d %H:%M:%S")
 
 
 def handle(item, folder, dry_run):
@@ -71,20 +97,21 @@ def handle(item, folder, dry_run):
     target = target_dir / item.name
 
     if target.exists():
-        print(f"{stamp()}  SKIP   {item.name}  (already a file with that name in {target_dir.name}/)")
+        log(f"{stamp()}  SKIP   {item.name}  (already a file with that name in {target_dir.name}/)")
         return "skipped"
 
     if dry_run:
-        print(f"{stamp()}  WOULD MOVE  {item.name}  ->  {target_dir.name}/")
+        log(f"{stamp()}  WOULD MOVE  {item.name}  ->  {target_dir.name}/")
         return "moved"
 
     try:
         target_dir.mkdir(exist_ok=True)
         shutil.move(str(item), str(target))
     except OSError as error:
-        print(f"{stamp()}  ERROR  {item.name}: {error}")
+        log(f"{stamp()}  ERROR  {item.name}: {error}")
         return "error"
-    print(f"{stamp()}  MOVED  {item.name}  ->  {target_dir.name}/")
+    log(f"{stamp()}  MOVED  {item.name}  ->  {target_dir.name}/")
+    notify("File Organized",f"MOVED  {item.name}  ->  {target_dir.name}/")
     return "moved"
 
 
@@ -110,9 +137,10 @@ def main():
             return
 
     
-    folder_1 = args[0] if len(args) > 0 else "Downloads"
-
-    folder = Path.home() / folder_1
+    if len(args) > 0:
+        folder = Path(args[0]).expanduser().resolve()
+    else:
+        folder = Path.home() / "Downloads"
 
     if not folder.is_dir():
         print(f"{folder} is not a folder.")
@@ -148,7 +176,6 @@ def main():
                     continue
                 if should_skip(item):
                     skipped_count += 1
-                    done.add(item.name)
                     continue
                 try:
                     size = item.stat().st_size
@@ -180,6 +207,6 @@ def main():
     except KeyboardInterrupt:
         prefix = "Would have " if dry_run else ""
         print("\n----Stopped----")
-        print(f"{prefix}Moved {moved_count} {prefix}Would Skipped {skipped_count}")
+        print(f"{prefix}Moved {moved_count} {prefix} Skipped {skipped_count}")
 
 main()

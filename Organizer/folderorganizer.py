@@ -4,6 +4,7 @@ import sys
 import shutil
 from pathlib import Path
 
+
 CATEGORIES = {
     "Pictures": [".jpg", ".jpeg", ".png", ".webp", ".gif", ".svg"],
     "Documents": [".pdf", ".docx", ".txt", ".xlsx", ".pptx", ".odt"],
