@@ -236,3 +236,305 @@ Memory is RSS: RAM each process holds. Shared memory is counted in
 every process that uses it, so the rows do not add up to your total RAM.
 gulshan@mx:~/Desktop/AI-Assist-Projects/Procwatcher
 $ 
+
+
+
+"/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/.venv/bin/python" "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py"
+Measuring CPU for 1 second ...
+26 processes running. 100% CPU = one full core.
+
+=== TOP 8 BY CPU (measured over 1.0s) ===
+      PID  NAME                MEMORY     CPU
+       84  com.vscodium.co   364.5 MB    5.0%
+       17  com.vscodium.co   229.1 MB    2.0%
+       57  com.vscodium.co   289.8 MB    2.0%
+      126  com.vscodium.co   128.4 MB    2.0%
+        1  bwrap               1.6 MB    0.0%
+       21  com.vscodium.co    54.4 MB    0.0%
+       23  zypak-sandbox       0.0 KB    0.0%
+       25  cat                 1.9 MB    0.0%
+
+Memory is RSS: RAM each process holds. Shared memory is counted in
+every process that uses it, so the rows do not add up to your total RAM.
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/.venv/bin/python" "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py"
+Measuring CPU for 1 second ...
+26 processes running. 100% CPU = one full core.
+
+=== TOP 8 BY CPU (measured over 1.0s) ===
+      PID  NAME                MEMORY     CPU
+       84  com.vscodium.co   373.6 MB    6.0%
+       57  com.vscodium.co   296.1 MB    5.0%
+      142  com.vscodium.co   195.9 MB    2.0%
+       17  com.vscodium.co   228.8 MB    1.0%
+      126  com.vscodium.co   130.7 MB    1.0%
+      150  com.vscodium.co   126.8 MB    1.0%
+     1279  python             14.1 MB    1.0%
+        1  bwrap               1.6 MB    0.0%
+
+Memory is RSS: RAM each process holds. Shared memory is counted in
+every process that uses it, so the rows do not add up to your total RAM.
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/.venv/bin/python" "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py"
+Measuring CPU for 1 second ...
+26 processes running. 100% CPU = one full core.
+
+=== TOP 8 BY CPU (measured over 1.0s) ===
+      PID  NAME                MEMORY     CPU
+       84 gulshan  com.vscodium.co   432.6 MB    3.0%
+       57 gulshan  com.vscodium.co   302.3 MB    2.0%
+      126 gulshan  com.vscodium.co   133.2 MB    1.0%
+     3495 gulshan  python             14.3 MB    1.0%
+        1 gulshan  bwrap               1.6 MB    0.0%
+       17 gulshan  com.vscodium.co   236.8 MB    0.0%
+       21 gulshan  com.vscodium.co    54.4 MB    0.0%
+       23 gulshan  zypak-sandbox       0.0 KB    0.0%
+
+Memory is RSS: RAM each process holds. Shared memory is counted in
+every process that uses it, so the rows do not add up to your total RAM.
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/.venv/bin/python" "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py"
+Measuring CPU for 1 second ...
+26 processes running. 100% CPU = one full core.
+
+=== TOP 8 BY CPU (measured over 1.0s) ===
+      PID OWNER    NAME                MEMORY     CPU
+       84 gulshan  com.vscodium.co   404.2 MB   45.9%
+       57 gulshan  com.vscodium.co   301.7 MB    2.0%
+      126 gulshan  com.vscodium.co   133.1 MB    2.0%
+       17 gulshan  com.vscodium.co   236.3 MB    1.0%
+        1 gulshan  bwrap               1.6 MB    0.0%
+       21 gulshan  com.vscodium.co    54.4 MB    0.0%
+       23 gulshan  zypak-sandbox       0.0 KB    0.0%
+       25 gulshan  cat                 1.9 MB    0.0%
+
+Memory is RSS: RAM each process holds. Shared memory is counted in
+every process that uses it, so the rows do not add up to your total RAM.
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/.venv/bin/python" "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py"
+Measuring CPU for 1 second ...
+Traceback (most recent call last):
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py", line 245, in <module>
+    main()
+    ~~~~^^
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py", line 220, in main
+    before = take_sample()
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py", line 143, in take_sample
+    ticks, state = read_cpu_ticks(pid)
+    ^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable int object
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ pyflakes /Procwatcher/procwatcher.py
+/Procwatcher/procwatcher.py: No such file or directory
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/.venv/bin/python" "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py"
+Measuring CPU for 1 second ...
+26 processes running. 100% CPU = one full core.
+Traceback (most recent call last):
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py", line 245, in <module>
+    main()
+    ~~~~^^
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py", line 228, in main
+    print_state()
+    ~~~~~~~~~~~^^
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py", line 119, in print_state
+    with open(f"/proc/{pid}/stat") as f:
+                       ^^^
+NameError: name 'pid' is not defined. Did you mean: 'pwd'?
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/.venv/bin/python" "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py"
+Measuring CPU for 1 second ...
+26 processes running. 100% CPU = one full core.
+1 Running! 25 Sleeping! 1 Zombie!!
+
+=== TOP 8 BY CPU (measured over 1.0s) ===
+      PID OWNER      NAME                MEMORY     CPU
+       84 gulshan    com.vscodium.co   405.4 MB    2.0%
+       57 gulshan    com.vscodium.co   327.4 MB    1.0%
+      126 gulshan    com.vscodium.co   133.4 MB    1.0%
+      150 gulshan    com.vscodium.co   122.9 MB    1.0%
+     6347 gulshan    python             14.3 MB    1.0%
+        1 gulshan    bwrap               1.6 MB    0.0%
+       17 gulshan    com.vscodium.co   239.2 MB    0.0%
+       21 gulshan    com.vscodium.co    54.4 MB    0.0%
+
+Memory is RSS: RAM each process holds. Shared memory is counted in
+every process that uses it, so the rows do not add up to your total RAM.
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/.venv/bin/python" "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py"
+Traceback (most recent call last):
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py", line 254, in <module>
+    main()
+    ~~~~^^
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py", line 221, in main
+    watch = parse_watch(args)
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py", line 216, in parse_watch
+    return watch
+           ^^^^^
+UnboundLocalError: cannot access local variable 'watch' where it is not associated with a value
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/.venv/bin/python" "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py"
+Measuring CPU for 1 second ...
+26 processes running. 100% CPU = one full core.
+1 running, 24 sleeping, 1 zombie
+
+=== TOP 8 BY CPU (measured over 1.0s) ===
+      PID OWNER      NAME                MEMORY     CPU
+       17 gulshan    com.vscodium.co   238.7 MB    2.0%
+       57 gulshan    com.vscodium.co   332.7 MB    2.0%
+       84 gulshan    com.vscodium.co   409.0 MB    2.0%
+      126 gulshan    com.vscodium.co   128.3 MB    1.0%
+     9419 gulshan    python             14.4 MB    1.0%
+        1 gulshan    bwrap               1.6 MB    0.0%
+       21 gulshan    com.vscodium.co    54.4 MB    0.0%
+       23 gulshan    zypak-sandbox       0.0 KB    0.0%
+
+Memory is RSS: RAM each process holds. Shared memory is counted in
+every process that uses it, so the rows do not add up to your total RAM.
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/.venv/bin/python" "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py" --watch 2
+Traceback (most recent call last):
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py", line 258, in <module>
+    main()
+    ~~~~^^
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py", line 222, in main
+    watch = parse_watch(args)
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py", line 209, in parse_watch
+    index = args["--watch"]
+            ~~~~^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/.venv/bin/python" "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py" --watch 2
+Traceback (most recent call last):
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py", line 259, in <module>
+    main()
+    ~~~~^^
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py", line 223, in main
+    watch = parse_watch(args)
+  File "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py", line 216, in parse_watch
+    if watch < 1:
+       ^^^^^^^^^
+TypeError: '<' not supported between instances of 'str' and 'int'
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/.venv/bin/python" "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py" --watch 2
+Measuring CPU for 1 second ...
+26 processes running. 100% CPU = one full core.
+1 running, 24 sleeping, 1 zombie
+
+=== TOP 8 BY CPU (measured over 1.0s) ===
+      PID OWNER      NAME                MEMORY     CPU
+       57 gulshan    com.vscodium.co   332.7 MB    3.0%
+       84 gulshan    com.vscodium.co   453.8 MB    3.0%
+      126 gulshan    com.vscodium.co   128.9 MB    3.0%
+        1 gulshan    bwrap               1.6 MB    0.0%
+       17 gulshan    com.vscodium.co   239.2 MB    0.0%
+       21 gulshan    com.vscodium.co    54.4 MB    0.0%
+       23 gulshan    zypak-sandbox       0.0 KB    0.0%
+       25 gulshan    cat                 1.9 MB    0.0%
+
+Memory is RSS: RAM each process holds. Shared memory is counted in
+every process that uses it, so the rows do not add up to your total RAM.
+Measuring CPU for 1 second ...
+24 processes running. 100% CPU = one full core.
+1 running, 22 sleeping, 1 zombie
+
+=== TOP 8 BY CPU (measured over 1.0s) ===
+      PID OWNER      NAME                MEMORY     CPU
+       57 gulshan    com.vscodium.co   332.2 MB    5.0%
+       84 gulshan    com.vscodium.co   450.6 MB    5.0%
+       17 gulshan    com.vscodium.co   239.4 MB    3.0%
+        1 gulshan    bwrap               1.6 MB    0.0%
+       21 gulshan    com.vscodium.co    54.4 MB    0.0%
+       23 gulshan    zypak-sandbox       0.0 KB    0.0%
+       25 gulshan    cat                 1.9 MB    0.0%
+       26 gulshan    cat                 1.9 MB    0.0%
+
+Memory is RSS: RAM each process holds. Shared memory is counted in
+every process that uses it, so the rows do not add up to your total RAM.
+Measuring CPU for 1 second ...
+24 processes running. 100% CPU = one full core.
+1 running, 22 sleeping, 1 zombie
+
+=== TOP 8 BY CPU (measured over 1.0s) ===
+      PID OWNER      NAME                MEMORY     CPU
+       84 gulshan    com.vscodium.co   488.3 MB   11.0%
+       57 gulshan    com.vscodium.co   333.1 MB    6.0%
+       17 gulshan    com.vscodium.co   239.8 MB    4.0%
+        1 gulshan    bwrap               1.6 MB    0.0%
+       21 gulshan    com.vscodium.co    54.4 MB    0.0%
+       23 gulshan    zypak-sandbox       0.0 KB    0.0%
+       25 gulshan    cat                 1.9 MB    0.0%
+       26 gulshan    cat                 1.9 MB    0.0%
+
+Memory is RSS: RAM each process holds. Shared memory is counted in
+every process that uses it, so the rows do not add up to your total RAM.
+Measuring CPU for 1 second ...
+^CExiting...
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/.venv/bin/python" "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py" --watch 2 --top 3 --sort cpu
+Measuring CPU for 1 second ...
+26 processes running. 100% CPU = one full core.
+1 running, 24 sleeping, 1 zombie
+
+=== TOP 3 BY CPU (measured over 1.0s) ===
+      PID OWNER      NAME                MEMORY     CPU
+       84 gulshan    com.vscodium.co   434.1 MB    3.0%
+       17 gulshan    com.vscodium.co   239.1 MB    2.0%
+       57 gulshan    com.vscodium.co   333.0 MB    2.0%
+
+Memory is RSS: RAM each process holds. Shared memory is counted in
+every process that uses it, so the rows do not add up to your total RAM.
+Measuring CPU for 1 second ...
+24 processes running. 100% CPU = one full core.
+2 running, 21 sleeping, 1 zombie
+
+=== TOP 3 BY CPU (measured over 1.0s) ===
+      PID OWNER      NAME                MEMORY     CPU
+       84 gulshan    com.vscodium.co   468.5 MB  131.8%
+       57 gulshan    com.vscodium.co   333.9 MB   67.9%
+       17 gulshan    com.vscodium.co   240.0 MB    6.0%
+
+Memory is RSS: RAM each process holds. Shared memory is counted in
+every process that uses it, so the rows do not add up to your total RAM.
+Measuring CPU for 1 second ...
+24 processes running. 100% CPU = one full core.
+2 running, 21 sleeping, 1 zombie
+
+=== TOP 3 BY CPU (measured over 1.0s) ===
+      PID OWNER      NAME                MEMORY     CPU
+       84 gulshan    com.vscodium.co   602.5 MB   84.9%
+       57 gulshan    com.vscodium.co   334.4 MB   67.9%
+       17 gulshan    com.vscodium.co   239.8 MB   10.0%
+
+Memory is RSS: RAM each process holds. Shared memory is counted in
+every process that uses it, so the rows do not add up to your total RAM.
+Measuring CPU for 1 second ...
+32 processes running. 100% CPU = one full core.
+1 running, 30 sleeping, 1 zombie
+
+=== TOP 3 BY CPU (measured over 1.0s) ===
+      PID OWNER      NAME                MEMORY     CPU
+       84 gulshan    com.vscodium.co   542.3 MB   53.9%
+       57 gulshan    com.vscodium.co   334.8 MB   39.9%
+       17 gulshan    com.vscodium.co   239.9 MB    6.0%
+
+Memory is RSS: RAM each process holds. Shared memory is counted in
+every process that uses it, so the rows do not add up to your total RAM.
+^Z
+[1]+  Stopped                    "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/.venv/bin/python" "/home/gulshan/Workspace/Languages/Phyton/AI Assist Projects/Procwatcher/procwatcher.py" --watch 2 --top 3 --sort cpu
+
+~/Workspace/Languages/Phyton/AI Assist Projects main* 
+❯ 

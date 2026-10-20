@@ -114,3 +114,6 @@ def main() -> None:
         print("  none")
     for size, path in big_files[:10]:
         print(f"  {human(size):>9}  {path}")
+
+if __name__ == "__main__":
+    main

@@ -16,7 +16,8 @@ Usage:
 
 It only READS. It never kills or changes anything.
 """
-
+from collections import Counter
+import pwd
 import os
 import sys
 import time
@@ -30,6 +31,7 @@ class Proc:
     # A dataclass is a class where you only list the fields and their types.
     # Python writes __init__ for you.
     pid: int
+    owner: str
     name: str
     memory_kb: int
     cpu_percent: float
@@ -95,13 +97,43 @@ def read_memory_kb(pid: int) -> int:
         pass
     return 0
 
+def read_owner(pid: int) -> str:
+    # Read the file owner of /proc/<pid> which matches the process owner
+    try:
+        uid = os.stat(f"/proc/{pid}").st_uid
+    except OSError:
+        return "?"
+
+    try:
+        return pwd.getpwuid(uid).pw_name
+    except KeyError:
+        return str(uid)
+
+
+def print_state() -> None:
+    counts: Counter[str] = Counter()
+
+    for pid in list_pids():
+        try:
+            with open(f"/proc/{pid}/stat") as f:
+                text = f.read()
+            after_name = text.rsplit(")", 1)[1].split()
+            counts[after_name[0]] += 1
+        except (OSError, IndexError):
+            continue
+
+    running = counts["R"]
+    sleeping = counts["S"] + counts["D"] + counts["I"]
+    zombies = counts["Z"]
+
+    print(f"{running} running, {sleeping} sleeping, {zombies} zombie")
+
 
 def take_sample() -> dict[int, int]:
-    # One snapshot: PID -> total CPU ticks that process has used so far.
     sample: dict[int, int] = {}
     for pid in list_pids():
         ticks = read_cpu_ticks(pid)
-        if ticks is not None:  # mypy forces this check: ticks could be None
+        if ticks is not None:
             sample[pid] = ticks
     return sample
 
@@ -114,7 +146,12 @@ def build_list(before: dict[int, int], after: dict[int, int], seconds: float) ->
     for pid, ticks_now in after.items():
         ticks_then = before.get(pid, 0)  # started after snapshot 1? then it had 0
         cpu = (ticks_now - ticks_then) / (ticks_per_second * seconds) * 100
-        procs.append(Proc(pid, read_name(pid), read_memory_kb(pid), max(cpu, 0.0)))
+        procs.append(
+            Proc(pid, 
+                read_owner(pid), 
+                read_name(pid),
+                read_memory_kb(pid), 
+                max(cpu, 0.0)))
     return procs
 
 
@@ -130,11 +167,11 @@ def print_table(title: str, procs: list[Proc]) -> None:
     # "-> None" means: this function returns nothing, it only prints.
     print()
     print(f"=== {title} ===")
-    print(f"  {'PID':>7}  {'NAME':<16} {'MEMORY':>9} {'CPU':>7}")
+    print(f"  {'PID':>7} {'OWNER':<10} {'NAME':<16} {'MEMORY':>9} {'CPU':>7}")
     for p in procs:
         # p.name[:16] keeps only the first 16 letters, so one long name
         # cannot push the other columns out of line.
-        print(f"  {p.pid:>7}  {p.name[:16]:<16} {human_kb(p.memory_kb):>9} {p.cpu_percent:>6.1f}%")
+        print(f"  {p.pid:>7} {p.owner[:10]:<10} {p.name[:16]:<16} {human_kb(p.memory_kb):>9} {p.cpu_percent:>6.1f}%")
 
 
 def parse_top(args: list[str]) -> int:
@@ -158,7 +195,7 @@ def parse_sort(args: list[str])-> str:
     if "--sort" in args:
         index = args.index("--sort")
         try:
-            sort = args[index + 1]
+            sort = args[index + 1].lower()
         except IndexError:
             print("--sort needs cpu | mem")
             sys.exit(1)
@@ -167,34 +204,62 @@ def parse_sort(args: list[str])-> str:
             sys.exit(1)
     return sort
 
+def parse_watch(args:list[str])->int | None:
+    if "--watch" not in args:
+        return None
+    watch = 0
+    if "--watch" in args:
+        index = args.index("--watch")
+        try:
+            watch = int(args[index + 1])
+        except (IndexError,ValueError):
+            print("--watch requires a whole number of seconds (e.g., --watch 2")
+            sys.exit(1)
+        if watch < 1:
+            print("--watch interval must be at least 1 second")
+            sys.exit(1)
+    return watch
+
 def main() -> None:
     args = sys.argv[1:]
-    top = parse_top(args)
-
-    print(f"Measuring CPU for {SAMPLE_SECONDS:.0f} second ...")
-    before = take_sample()
-    start = time.monotonic()
-    time.sleep(SAMPLE_SECONDS)
-    after = take_sample()
-    elapsed = time.monotonic() - start
-
-    procs = build_list(before, after, elapsed)
-    print(f"{len(procs)} processes running. 100% CPU = one full core.")
-
-    by_memory = sorted(procs, key=memory_of, reverse=True)
-    by_cpu = sorted(procs, key=cpu_of, reverse=True)
-
     sort = parse_sort(args)
-    if sort == "cpu":
-        print_table(f"TOP {top} BY CPU (measured over {elapsed:.1f}s)", by_cpu[:top])
-    else:
-        print_table(f"TOP {top} BY MEMORY", by_memory[:top])
+    top = parse_top(args)
+    watch = parse_watch(args)
+    try:
+        while True:
+            # Clear screen if running in watch mode
+            if watch is not None:
+                print("\033[2J\033[H", end="")
+
+            print(f"Measuring CPU for {SAMPLE_SECONDS:.0f} second ...")
+            before = take_sample()
+            start = time.monotonic()
+            time.sleep(SAMPLE_SECONDS)
+            after = take_sample()
+            elapsed = time.monotonic() - start
+
+            procs = build_list(before, after, elapsed)
+            print(f"{len(procs)} processes running. 100% CPU = one full core.")
+            print_state()
+
+            if sort == "mem":
+                by_memory = sorted(procs, key=memory_of, reverse=True)
+                print_table(f"TOP {top} BY MEMORY", by_memory[:top])
+            else:
+                by_cpu = sorted(procs, key=cpu_of, reverse=True)
+                print_table(f"TOP {top} BY CPU (measured over {elapsed:.1f}s)", by_cpu[:top])
 
 
-    print()
-    print("Memory is RSS: RAM each process holds. Shared memory is counted in")
-    print("every process that uses it, so the rows do not add up to your total RAM.")
-
+            print()
+            print("Memory is RSS: RAM each process holds. Shared memory is counted in")
+            print("every process that uses it, so the rows do not add up to your total RAM.")
+            
+            if not watch:
+                break
+            time.sleep(watch)
+    
+    except KeyboardInterrupt:
+        print("\nExiting...")
 
 if __name__ == "__main__":
     main()
