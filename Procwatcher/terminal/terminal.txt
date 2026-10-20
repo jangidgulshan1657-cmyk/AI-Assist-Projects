@@ -1,0 +1,238 @@
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ /bin/python3 /home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/tests/rsplit.py
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ /bin/python3 /home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/tests/rsplit.py
+['home', 'user/documents/photos/vacation.jpg']
+['home/user/documents/photos', 'vacation.jpg']
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ /bin/python3 /home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py
+Measuring CPU for 1 second ...
+254 processes running. 100% CPU = one full core.
+
+=== TOP 8 BY MEMORY ===
+      PID  NAME                MEMORY     CPU
+     3812  chrome            758.9 MB   27.1%
+     3351  codium            375.5 MB   89.9%
+     3387  chrome            324.7 MB    2.9%
+     3906  chrome            278.4 MB    0.0%
+     3252  codium            204.2 MB    6.8%
+     3540  chrome            186.0 MB    1.9%
+     4126  chrome            185.9 MB    0.0%
+     3421  codium            181.4 MB    6.8%
+
+=== TOP 8 BY CPU (measured over 1.0s) ===
+      PID  NAME                MEMORY     CPU
+     3351  codium            375.5 MB   89.9%
+     3812  chrome            758.9 MB   27.1%
+     5269  chrome            130.9 MB   19.3%
+     3287  codium            170.4 MB   17.4%
+     2223  Xorg              126.9 MB   10.6%
+     3252  codium            204.2 MB    6.8%
+     3421  codium            181.4 MB    6.8%
+     2660  xfwm4             118.5 MB    5.8%
+
+Memory is RSS: RAM each process holds. Shared memory is counted in
+every process that uses it, so the rows do not add up to your total RAM.
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ /bin/python3 /home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py
+Measuring CPU for 1 second ...
+264 processes running. 100% CPU = one full core.
+Traceback (most recent call last):
+  File "/home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py", line 179, in <module>
+    main()
+    ~~~~^^
+  File "/home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py", line 169, in main
+    memo_cpu = sorted(procs, key=(memory_of,cpu_of), reverse=True)
+TypeError: 'tuple' object is not callable
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ /bin/python3 /home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py
+  File "/home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py", line 169
+    memo_cpu = sorted(procs, key=memory_of,cpu_of, reverse=True)
+                                                               ^
+SyntaxError: positional argument follows keyword argument
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ /bin/python3 /home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py
+Measuring CPU for 1 second ...
+264 processes running. 100% CPU = one full core.
+
+=== TOP 8 BY CPU (measured over 1.0s) ===
+      PID  NAME                MEMORY     CPU
+     3812  chrome            500.7 MB   33.6%
+     3287  codium            179.4 MB   22.1%
+     3351  codium            398.9 MB   17.3%
+     6370  chrome            339.1 MB    7.7%
+     2223  Xorg              126.9 MB    6.7%
+     3421  codium            184.9 MB    6.7%
+     2660  xfwm4             118.5 MB    3.8%
+     3500  codium            121.2 MB    2.9%
+
+Memory is RSS: RAM each process holds. Shared memory is counted in
+every process that uses it, so the rows do not add up to your total RAM.
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ /bin/python3 /home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py --sort mem
+Measuring CPU for 1 second ...
+273 processes running. 100% CPU = one full core.
+Traceback (most recent call last):
+  File "/home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py", line 202, in <module>
+    main()
+    ~~~~^^
+  File "/home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py", line 189, in main
+    sort = parse_sort(args)
+  File "/home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py", line 160, in parse_sort
+    index = args.index["--top"]
+            ~~~~~~~~~~^^^^^^^^^
+TypeError: 'builtin_function_or_method' object is not subscriptable
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ /bin/python3 /home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py --sort mem
+Measuring CPU for 1 second ...
+273 processes running. 100% CPU = one full core.
+Traceback (most recent call last):
+  File "/home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py", line 201, in <module>
+    main()
+    ~~~~^^
+  File "/home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py", line 188, in main
+    sort = parse_sort(args)
+  File "/home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py", line 159, in parse_sort
+    index = args.index["--top"]
+            ~~~~~~~~~~^^^^^^^^^
+TypeError: 'builtin_function_or_method' object is not subscriptable
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ /bin/python3 /home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py --sort mem
+Measuring CPU for 1 second ...
+273 processes running. 100% CPU = one full core.
+Traceback (most recent call last):
+  File "/home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py", line 201, in <module>
+    main()
+    ~~~~^^
+  File "/home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py", line 188, in main
+    sort = parse_sort(args)
+  File "/home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py", line 159, in parse_sort
+    index = args.index["--sort"]
+            ~~~~~~~~~~^^^^^^^^^^
+TypeError: 'builtin_function_or_method' object is not subscriptable
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ /bin/python3 /home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py --sort mem
+Measuring CPU for 1 second ...
+273 processes running. 100% CPU = one full core.
+Traceback (most recent call last):
+  File "/home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py", line 201, in <module>
+    main()
+    ~~~~^^
+  File "/home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py", line 188, in main
+    sort = parse_sort(args)
+  File "/home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py", line 161, in parse_sort
+    sort = arys[index + 1]
+           ^^^^
+NameError: name 'arys' is not defined. Did you mean: 'args'?
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ cd Procwatcher
+gulshan@mx:~/Desktop/AI-Assist-Projects/Procwatcher
+$ pip install pyflakes
+error: externally-managed-environment
+
+× This environment is externally managed
+╰─> To install Python packages system-wide, try apt install
+    python3-xyz, where xyz is the package you are trying to
+    install.
+    
+    If you wish to install a non-Debian-packaged Python package,
+    create a virtual environment using python3 -m venv path/to/venv.
+    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+    sure you have python3-full installed.
+    
+    If you wish to install a non-Debian packaged Python application,
+    it may be easiest to use pipx install xyz, which will manage a
+    virtual environment for you. Make sure you have pipx installed.
+    
+    See /usr/share/doc/python3.13/README.venv for more information.
+
+note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+hint: See PEP 668 for the detailed specification.
+gulshan@mx:~/Desktop/AI-Assist-Projects/Procwatcher
+$ pyflakes procwatcher.py
+Command 'pyflakes' not found, did you mean:
+  command 'pyflakes3' from deb pyflakes3
+Try: sudo apt install <deb name>
+gulshan@mx:~/Desktop/AI-Assist-Projects/Procwatcher
+$ pyfla^C
+gulshan@mx:~/Desktop/AI-Assist-Projects/Procwatcher
+$ ke/home/gulshan/Desktop/AI-Assist-Projects/.venv/bin/python -m pip install pyflakes
+bash: ke/home/gulshan/Desktop/AI-Assist-Projects/.venv/bin/python: No such file or directory
+gulshan@mx:~/Desktop/AI-Assist-Projects/Procwatcher
+$ pyflakes3 prowatcher.py
+Command 'pyflakes3' not found, but can be installed with:
+sudo apt install pyflakes3
+gulshan@mx:~/Desktop/AI-Assist-Projects/Procwatcher
+$ pip install pyflakes
+error: externally-managed-environment
+
+× This environment is externally managed
+╰─> To install Python packages system-wide, try apt install
+    python3-xyz, where xyz is the package you are trying to
+    install.
+    
+    If you wish to install a non-Debian-packaged Python package,
+    create a virtual environment using python3 -m venv path/to/venv.
+    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+    sure you have python3-full installed.
+    
+    If you wish to install a non-Debian packaged Python application,
+    it may be easiest to use pipx install xyz, which will manage a
+    virtual environment for you. Make sure you have pipx installed.
+    
+    See /usr/share/doc/python3.13/README.venv for more information.
+
+note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+hint: See PEP 668 for the detailed specification.
+gulshan@mx:~/Desktop/AI-Assist-Projects/Procwatcher
+$ /bin/python3 /home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py --sort mem
+Measuring CPU for 1 second ...
+272 processes running. 100% CPU = one full core.
+Traceback (most recent call last):
+  File "/home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py", line 201, in <module>
+    main()
+    ~~~~^^
+  File "/home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py", line 188, in main
+    sort = parse_sort(args)
+  File "/home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py", line 162, in parse_sort
+    del sys.sort[index:index + 1]
+        ^^^^^^^^
+AttributeError: module 'sys' has no attribute 'sort'
+gulshan@mx:~/Desktop/AI-Assist-Projects/Procwatcher
+$ /bin/python3 /home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatcher.py --sort mem
+Measuring CPU for 1 second ...
+272 processes running. 100% CPU = one full core.
+
+=== TOP 8 BY MEMORY ===
+      PID  NAME                MEMORY     CPU
+     5702  Isolated Web Co   528.9 MB    0.0%
+     3812  chrome            511.1 MB   29.5%
+     5466  firefox-bin       442.6 MB    2.0%
+     3351  codium            424.1 MB   16.7%
+     6370  chrome            339.4 MB    7.9%
+     3387  chrome            329.4 MB    0.0%
+     4126  chrome            224.4 MB    0.0%
+     3252  codium            213.7 MB    0.0%
+
+Memory is RSS: RAM each process holds. Shared memory is counted in
+every process that uses it, so the rows do not add up to your total RAM.
+gulshan@mx:~/Desktop/AI-Assist-Projects/Procwatcher
+$ python3 procwatch.py --sort cpu --top 5
+python3: can't open file '/home/gulshan/Desktop/AI-Assist-Projects/Procwatcher/procwatch.py': [Errno 2] No such file or directory
+gulshan@mx:~/Desktop/AI-Assist-Projects/Procwatcher
+$ python3 procwatcher.py --sort cpu --top 5
+Measuring CPU for 1 second ...
+274 processes running. 100% CPU = one full core.
+
+=== TOP 5 BY CPU (measured over 1.0s) ===
+      PID  NAME                MEMORY     CPU
+     3812  chrome            520.1 MB   30.5%
+     6370  chrome            339.5 MB    7.9%
+     3351  codium            417.8 MB    5.9%
+     3287  codium            182.1 MB    3.9%
+     3540  chrome            195.2 MB    3.0%
+
+Memory is RSS: RAM each process holds. Shared memory is counted in
+every process that uses it, so the rows do not add up to your total RAM.
+gulshan@mx:~/Desktop/AI-Assist-Projects/Procwatcher
+$ 
