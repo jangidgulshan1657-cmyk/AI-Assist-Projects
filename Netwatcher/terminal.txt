@@ -1,0 +1,191 @@
+her.py --watch 3
+Traceback (most recent call last):
+  File "/home/gulshan/Desktop/AI-Assist-Projects/Netwatcher/netwatcher.py", line 110, in <module>
+    main()
+    ~~~~^^
+  File "/home/gulshan/Desktop/AI-Assist-Projects/Netwatcher/netwatcher.py", line 66, in main
+    args = sys.args[1:]
+           ^^^^^^^^
+AttributeError: module 'sys' has no attribute 'args'. Did you mean: 'argv'?
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ /home/gulshan/Desktop/AI-Assist-Projects/.venv/bin/python /home/gulshan/Desktop/AI-Assist-Projects/Netwatcher/netwatcher.py --watch 3
+Measuring for 1 second ...
+
+=== NETWORK (measured over 1.0s) ===
+  INTERFACE           DOWN/s        UP/s   TOTAL DOWN   TOTAL UP
+  lo                 0.0 B/s     0.0 B/s      13.6 KB    13.6 KB
+  eth0               0.0 B/s     0.0 B/s        0.0 B      0.0 B
+  wlan0              0.0 B/s     0.0 B/s      45.8 MB    18.3 MB
+
+DOWN = received, UP = sent. TOTAL = since this PC booted.
+lo is the loopback: traffic that never leaves your own PC.
+Measuring for 1 second ...
+
+=== NETWORK (measured over 1.0s) ===
+  INTERFACE           DOWN/s        UP/s   TOTAL DOWN   TOTAL UP
+  lo                 0.0 B/s     0.0 B/s      13.6 KB    13.6 KB
+  eth0               0.0 B/s     0.0 B/s        0.0 B      0.0 B
+  wlan0              0.0 B/s     0.0 B/s      45.8 MB    18.3 MB
+
+DOWN = received, UP = sent. TOTAL = since this PC booted.
+lo is the loopback: traffic that never leaves your own PC.
+Measuring for 1 second ...
+
+=== NETWORK (measured over 1.0s) ===
+  INTERFACE           DOWN/s        UP/s   TOTAL DOWN   TOTAL UP
+  lo                 0.0 B/s     0.0 B/s      13.6 KB    13.6 KB
+  eth0               0.0 B/s     0.0 B/s        0.0 B      0.0 B
+  wlan0              0.0 B/s     0.0 B/s      45.8 MB    18.3 MB
+
+DOWN = received, UP = sent. TOTAL = since this PC booted.
+lo is the loopback: traffic that never leaves your own PC.
+Measuring for 1 second ...
+
+=== NETWORK (measured over 1.0s) ===
+  INTERFACE           DOWN/s        UP/s   TOTAL DOWN   TOTAL UP
+  lo                 0.0 B/s     0.0 B/s      13.6 KB    13.6 KB
+  eth0               0.0 B/s     0.0 B/s        0.0 B      0.0 B
+  wlan0            12.5 KB/s    2.3 KB/s      45.8 MB    18.3 MB
+
+DOWN = received, UP = sent. TOTAL = since this PC booted.
+lo is the loopback: traffic that never leaves your own PC.
+Measuring for 1 second ...
+
+=== NETWORK (measured over 1.0s) ===
+  INTERFACE           DOWN/s        UP/s   TOTAL DOWN   TOTAL UP
+  lo                 0.0 B/s     0.0 B/s      13.6 KB    13.6 KB
+  eth0               0.0 B/s     0.0 B/s        0.0 B      0.0 B
+  wlan0             2.5 KB/s    3.4 KB/s      45.8 MB    18.3 MB
+
+DOWN = received, UP = sent. TOTAL = since this PC booted.
+lo is the loopback: traffic that never leaves your own PC.
+Measuring for 1 second ...
+
+=== NETWORK (measured over 1.0s) ===
+  INTERFACE           DOWN/s        UP/s   TOTAL DOWN   TOTAL UP
+  lo                 0.0 B/s     0.0 B/s      13.6 KB    13.6 KB
+  eth0               0.0 B/s     0.0 B/s        0.0 B      0.0 B
+  wlan0             3.9 KB/s    9.1 KB/s      46.0 MB    18.4 MB
+
+DOWN = received, UP = sent. TOTAL = since this PC booted.
+lo is the loopback: traffic that never leaves your own PC.
+Measuring for 1 second ...
+
+=== NETWORK (measured over 1.0s) ===
+  INTERFACE           DOWN/s        UP/s   TOTAL DOWN   TOTAL UP
+  lo                 0.0 B/s     0.0 B/s      13.6 KB    13.6 KB
+  eth0               0.0 B/s     0.0 B/s        0.0 B      0.0 B
+  wlan0            22.6 KB/s   18.0 KB/s      47.3 MB    18.5 MB
+
+DOWN = received, UP = sent. TOTAL = since this PC booted.
+lo is the loopback: traffic that never leaves your own PC.
+Measuring for 1 second ...
+
+=== NETWORK (measured over 1.0s) ===
+  INTERFACE           DOWN/s        UP/s   TOTAL DOWN   TOTAL UP
+  lo                 0.0 B/s     0.0 B/s      13.6 KB    13.6 KB
+  eth0               0.0 B/s     0.0 B/s        0.0 B      0.0 B
+  wlan0            257.9 B/s   365.8 B/s      47.3 MB    18.5 MB
+
+DOWN = received, UP = sent. TOTAL = since this PC booted.
+lo is the loopback: traffic that never leaves your own PC.
+^C
+Exiting...
+gulshan@mx:~/Desktop/AI-Assist-Projects
+
+
+=== NETWORK (measured over 3.0s) ===
+  INTERFACE           DOWN/s        UP/s   TOTAL DOWN   TOTAL UP
+  lo                 0.0 B/s     0.0 B/s      13.7 KB    13.7 KB
+  eth0               0.0 B/s     0.0 B/s        0.0 B      0.0 B
+  wlan0              0.0 B/s     0.0 B/s      49.4 MB    20.3 MB
+
+87.3 B/s is the Hieghest down!!
+
+DOWN = received, UP = sent. TOTAL = since this PC booted.
+lo is the loopback: traffic that never leaves your own PC.
+Measuring for 3 second ...
+
+=== NETWORK (measured over 3.0s) ===
+  INTERFACE           DOWN/s        UP/s   TOTAL DOWN   TOTAL UP
+  lo                 0.0 B/s     0.0 B/s      13.7 KB    13.7 KB
+  eth0               0.0 B/s     0.0 B/s        0.0 B      0.0 B
+  wlan0             93.6 B/s    85.6 B/s      49.4 MB    20.3 MB
+
+93.6 B/s is the Hieghest down!!
+
+DOWN = received, UP = sent. TOTAL = since this PC booted.
+lo is the loopback: traffic that never leaves your own PC.
+Measuring for 3 second ...
+
+=== NETWORK (measured over 3.0s) ===
+  INTERFACE           DOWN/s        UP/s   TOTAL DOWN   TOTAL UP
+  lo                 0.0 B/s     0.0 B/s      13.7 KB    13.7 KB
+  eth0               0.0 B/s     0.0 B/s        0.0 B      0.0 B
+  wlan0              0.0 B/s     0.0 B/s      49.4 MB    20.3 MB
+
+93.6 B/s is the Hieghest down!!
+
+DOWN = received, UP = sent. TOTAL = since this PC booted.
+lo is the loopback: traffic that never leaves your own PC.
+Measuring for 3 second ...
+
+=== NETWORK (measured over 3.0s) ===
+  INTERFACE           DOWN/s        UP/s   TOTAL DOWN   TOTAL UP
+  lo                 0.0 B/s     0.0 B/s      13.7 KB    13.7 KB
+  eth0               0.0 B/s     0.0 B/s        0.0 B      0.0 B
+  wlan0              0.0 B/s     0.0 B/s      49.4 MB    20.3 MB
+
+93.6 B/s is the Hieghest down!!
+
+DOWN = received, UP = sent. TOTAL = since this PC booted.
+lo is the loopback: traffic that never leaves your own PC.
+^C
+Exiting...
+
+ /home/gulshan/Desktop/AI-Assist-Projects/.venv/bin/python /home/gulshan/Desktop/AI-Assist-Projects/Netwatcher/netwatcher.py --watch 3
+Measuring for 3 second ...
+
+=== NETWORK (measured over 3.0s) ===
+  INTERFACE           DOWN/s        UP/s   TOTAL DOWN   TOTAL UP
+  lo                 0.0 B/s     0.0 B/s      13.7 KB    13.7 KB
+  eth0               0.0 B/s     0.0 B/s        0.0 B      0.0 B
+  wlan0             1.2 KB/s    1.4 KB/s      50.5 MB    20.5 MB
+
+1.2 KB/s is the Highest download Speed!!
+
+DOWN = received, UP = sent. TOTAL = since this PC booted.
+lo is the loopback: traffic that never leaves your own PC.
+Measuring for 3 second ...
+
+=== NETWORK (measured over 3.0s) ===
+  INTERFACE           DOWN/s        UP/s   TOTAL DOWN   TOTAL UP
+  lo                 0.0 B/s     0.0 B/s      13.7 KB    13.7 KB
+  eth0               0.0 B/s     0.0 B/s        0.0 B      0.0 B
+  wlan0            413.2 B/s    3.3 KB/s      50.5 MB    20.5 MB
+
+1.2 KB/s is the Highest download Speed!!
+
+DOWN = received, UP = sent. TOTAL = since this PC booted.
+lo is the loopback: traffic that never leaves your own PC.
+Measuring for 3 second ...
+
+=== NETWORK (measured over 3.0s) ===
+  INTERFACE           DOWN/s        UP/s   TOTAL DOWN   TOTAL UP
+  lo                 0.0 B/s     0.0 B/s      13.7 KB    13.7 KB
+  eth0               0.0 B/s     0.0 B/s        0.0 B      0.0 B
+  wlan0             29.0 B/s    39.7 B/s      50.5 MB    20.5 MB
+
+1.2 KB/s is the Highest download Speed!!
+
+DOWN = received, UP = sent. TOTAL = since this PC booted.
+lo is the loopback: traffic that never leaves your own PC.
+Measuring for 3 second ...
+
+=== NETWORK (measured over 3.0s) ===
+  INTERFACE           DOWN/s        UP/s   TOTAL DOWN   TOTAL UP
+  lo                 0.0 B/s     0.0 B/s      13.7 KB    13.7 KB
+  eth0               0.0 B/s     0.0 B/s        0.0 B      0.0 B
+  wlan0              0.0 B/s     0.0 B/s      50.5 MB    20.5 MB
+
+1.2 KB/s is the Highest download Speed!
