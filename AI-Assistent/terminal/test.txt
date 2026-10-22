@@ -1,0 +1,140 @@
+/home/gulshan/Desktop/AI-Assist-Projects/.venv/bin/python "/home/gulshan/Desktop/AI-Assist-Projects/AI- Assistent/tst.py"
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "disk_hogs",
+      "description": "Which folders use the most space.",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  }
+]
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ /home/gulshan/Desktop/AI-Assist-Projects/.venv/bin/python /home/gulshan/Desktop/AI-Assist-Projects/Watcher/src/diskhog.py
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ /home/gulshan/Desktop/AI-Assist-Projects/.venv/bin/python /home/gulshan/Desktop/AI-Assist-Projects/Watcher/src/diskhog.py
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ /home/gulshan/Desktop/AI-Assist-Projects/.venv/bin/python /home/gulshan/Desktop/AI-Assist-Projects/Watcher/src/diskhog.py
+Scanning /home/gulshan ... this can take a minute.
+
+=== BIGGEST ITEMS IN /home/gulshan (total 17.0 GB) ===
+  [############--------] 62.5%    10.6 GB  Videos                   154 Files
+  [##------------------] 11.1%     1.9 GB  .local                  4256 Files
+  [#-------------------]  8.3%     1.4 GB  .cache                 34109 Files
+  [#-------------------]  7.4%     1.3 GB  Music                    372 Files
+  [--------------------]  4.8%   837.0 MB  .config                 4730 Files
+  [--------------------]  3.5%   611.1 MB  Pictures                 169 Files
+  [--------------------]  1.4%   238.4 MB  nerd-dictation          1443 Files
+  [--------------------]  0.3%    52.9 MB  .var                     621 Files
+  [--------------------]  0.2%    35.4 MB  Documents                310 Files
+  [--------------------]  0.2%    29.3 MB  .vscode-oss             2689 Files
+  [--------------------]  0.2%    29.0 MB  Books                      2 Files
+  [--------------------]  0.1%    10.2 MB  Desktop                  993 Files
+  [--------------------]  0.0%   294.4 KB  Downloads                  1 Files
+  [--------------------]  0.0%   183.5 KB  Code                     187 Files
+  [--------------------]  0.0%    64.4 KB  .pki                       3 Files
+
+=== SINGLE FILES OVER 100.0 MB ===
+  1018.9 MB  /home/gulshan/Videos/Stuy/Artificial Intelligence /Learning - Lecture 4 - CS50_s Introduction to Artificial Intelligence with Python 2020(720P_HD).mp4
+   696.9 MB  /home/gulshan/Videos/Stuy/Artificial Intelligence /Uncertainty - Lecture 2 - CS50_s Introduction to Artificial Intelligence with Python 2020(720P_HD).mp4
+   567.7 MB  /home/gulshan/Videos/Stuy/Artificial Intelligence /Optimization - Lecture 3 - CS50_s Introduction to Artificial Intelligence with Python 2020(720P_HD).mp4
+   520.3 MB  /home/gulshan/Videos/short form/When Movie Characters Tried To Tell Us Something(1080P_60FPS).mp4
+   481.3 MB  /home/gulshan/Videos/Stuy/Artificial Intelligence /Language - Lecture 6 - CS50_s Introduction to Artificial Intelligence with Python 2023(720P_HD).mp4
+   471.3 MB  /home/gulshan/Videos/Stuy/Artificial Intelligence /Neural Networks - Lecture 5 - CS50_s Introduction to Artificial Intelligence with Python 2020(720P_HD).mp4
+   441.4 MB  /home/gulshan/Videos/Stuy/SnapTube Video/Strange Fall of Oracle _ How a _300 Billion AI Deal Changed Everything_(2K_HD).webm
+   432.9 MB  /home/gulshan/Videos/Stuy/SnapTube Video/India_s Biggest Economic Threat _ Why Jaishankar Is Warning Every Indian About the 4F Crisis_(2K_HD).webm
+   369.0 MB  /home/gulshan/Videos/Stuy/ lectures/Lecture 8_ Beyond the Code(720P_HD).mp4
+   331.8 MB  /home/gulshan/Videos/Stuy/SnapTube Video/A strange shift in IT _ Why the industry is changing faster than anyone expected_(2K_HD).webm
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ /home/gulshan/Desktop/AI-Assist-Projects/.venv/bin/python "/home/gulshan/Desktop/AI-Assist-Projects/AI- Assistent/tst.py"
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "disk_hogs",
+      "description": "Which folders use the most space.",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  }
+]
+['system', 'user question', 'assistant tool_call']
+['system']
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ /home/gulshan/Desktop/AI-Assist-Projects/.venv/bin/python "/home/gulshan/Desktop/AI-Assist-Projects/AI- Assistent/test/get.py"
+network
+
+''
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ /home/gulshan/Desktop/AI-Assist-Projects/.venv/bin/python "/home/gulshan/Desktop/AI-Assist-Projects/AI- Assistent/test/get.py"
+network
+Traceback (most recent call last):
+  File "/home/gulshan/Desktop/AI-Assist-Projects/AI- Assistent/test/get.py", line 5, in <module>
+    print(call_bad.get("function").get("name", ""))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ /home/gulshan/Desktop/AI-Assist-Projects/.venv/bin/python "/home/gulshan/Desktop/AI-Assist-Projects/AI- Assistent/test/get.py"
+network
+
+''
+/home/gulshan/Desktop/AI-Assist-Projects/.venv/bin/python
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ /home/gulshan/Desktop/AI-Assist-Projects/.venv/bin/python "/home/gulshan/Desktop/AI-Assist-Projects/AI- Assistent/test/subpoces.py"
+'hello\n' 0
+1
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    1/0
+    ~^~
+ZeroDivisionError: division by zero
+
+abc
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ /home/gulshan/Desktop/AI-Assist-Projects/.venv/bin/python "/home/gulshan/Desktop/AI-Assist-Projects/AI- Assistent/test/subpoces.py"
+'hello\n' 0
+1
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    1/0
+    ~^~
+ZeroDivisionError: division by zero
+
+abc
+'to stdout\n'
+'to stderr\n'
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ /home/gulshan/Desktop/AI-Assist-Projects/.venv/bin/python "/home/gulshan/Desktop/AI-Assist-Projects/AI- Assistent/test/repr.py"
+hello
+
+'hello\n'
+to stdout
+
+'to stdout\n'
+'to stdout'
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ jobs
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ /home/gulshan/Desktop/AI-Assist-Projects/.venv/bin/python /home/gulshan/Desktop/AI-Assist-Projects/AI-Assistent/test/looptest.py
+--- step 0: LLM replied ---
+--- step 1: LLM replied ---
+FINAL ANSWER: RAM is fine, network is idle.
+{'role': 'system', 'content': 'You are Jarvis'}
+{'role': 'user', 'content': 'how is my pc?'}
+{'role': 'assistant', 'content': '', 'tool_calls': [{'id': 'c1', 'function': {'name': 'system_info'}}, {'id': 'c2', 'function': {'name': 'network'}}]}
+{'role': 'tool', 'tool_call_id': 'c1', 'content': '<output of system_info>'}
+{'role': 'tool', 'tool_call_id': 'c2', 'content': '<output of network>'}
+{'role': 'assistant', 'content': 'RAM is fine, network is idle.'}
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ /home/gulshan/Desktop/AI-Assist-Projects/.venv/bin/python /home/gulshan/Desktop/AI-Assist-Projects/AI-Assistent/test/path.py
+/home/gulshan/Desktop/AI-Assist-Projects/AI- Assistent
+/home/gulshan/Desktop/AI-Assist-Projects
+/home/gulshan/Desktop/AI-Assist-Projects/Linux/sysinfo.py
+False
+gulshan@mx:~/Desktop/AI-Assist-Projects
+$ 

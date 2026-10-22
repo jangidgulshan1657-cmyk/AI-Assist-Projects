@@ -105,5 +105,5 @@ def main() -> None:
     for path in paths:
         show_disk(path)
 
-
-main()
+if __name__ == "__main__":
+    main()

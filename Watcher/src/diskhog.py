@@ -116,4 +116,4 @@ def main() -> None:
         print(f"  {human(size):>9}  {path}")
 
 if __name__ == "__main__":
-    main
+    main()
